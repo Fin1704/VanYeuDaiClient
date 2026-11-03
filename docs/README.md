@@ -1,5 +1,7 @@
 # 文档索引 / Documentation
 
+- [AI coding agents: persistent project knowledge base](ai/README.md) — source-verified architecture, module/task routing, dependencies, coverage and maintenance rules (Vietnamese; paths/symbols unchanged).
+
 当前默认版本为 **雨歇 · Stillwater（3D）**，默认 Git 分支为 `master`。旧版 2D 保留并可独立启动。
 
 ## 当前版本

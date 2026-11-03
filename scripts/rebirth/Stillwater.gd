@@ -2,6 +2,8 @@ extends Node3D
 const F := preload("res://scripts/rebirth/Form.gd")
 const ACTOR := preload("res://scripts/rebirth/Duelist.gd")
 const INTERFACE := preload("res://scripts/rebirth/StillwaterUI.gd")
+# Keep gameplay RNG at the position reached after the old seeded map construction.
+const MAP_RNG_STATE := -7507491820233601411
 var player: CharacterBody3D
 var camera: Camera3D
 var ui: CanvasLayer
@@ -22,12 +24,7 @@ var skill_cooldowns := [0.0,0.0]
 var shake := 0.0
 var shake_enabled := true
 var rng := RandomNumberGenerator.new()
-var stone: Material
-var edge: Material
-var dark: Material
-var wood: Material
 var gold: Material
-var leaves: Material
 var audio: AudioStreamPlayer
 var fireflies: Array[Node3D] = []
 var intro_time := 0.0
@@ -63,7 +60,8 @@ func _ready() -> void:
 	director.world = self
 	process_mode = Node.PROCESS_MODE_ALWAYS
 	configure_gamepad()
-	build_environment()
+	setup_map()
+	rng.state = MAP_RNG_STATE
 	player = ACTOR.new()
 	player.hero = true
 	player.world = self
@@ -93,247 +91,22 @@ func _ready() -> void:
 	ui.show_title()
 	capture_checkpoint()
 
-func build_environment() -> void:
-	stone = F.weathered(Color("697975"),2.0)
-	edge = F.weathered(Color("33494e"),4.0)
-	dark = F.material(Color("1c3037"),0.15,0.7)
-	wood = F.weathered(Color("4a3b30"),8.0)
-	gold = F.material(Color("b89a61"),0.65,0.4)
-	leaves = F.material(Color("99432c"),0.03,0.9)
-	var env := WorldEnvironment.new()
-	var atmosphere := Environment.new()
-	atmosphere.background_mode = Environment.BG_COLOR
-	atmosphere.background_color = Color("243e4d")
-	atmosphere.ambient_light_source = Environment.AMBIENT_SOURCE_COLOR
-	atmosphere.ambient_light_color = Color("93b9cb")
-	atmosphere.ambient_light_energy = 0.55
-	atmosphere.tonemap_mode = Environment.TONE_MAPPER_FILMIC
-	atmosphere.ssao_enabled = true
-	atmosphere.ssao_radius = 2.0
-	atmosphere.ssao_intensity = 1.6
-	atmosphere.glow_enabled = true
-	atmosphere.glow_intensity = 0.55
-	atmosphere.fog_enabled = true
-	atmosphere.fog_light_color = Color("344e5d")
-	atmosphere.fog_density = 0.003
-	atmosphere.fog_height = -0.4
-	atmosphere.fog_height_density = 0.18
-	ambient_environment = atmosphere
-	env.environment = atmosphere
-	add_child(env)
-	var sun := DirectionalLight3D.new()
-	key_light = sun
-	sun.rotation_degrees = Vector3(-48,-34,0)
-	sun.light_color = Color("f6d7a8")
-	sun.light_energy = 1.25
-	sun.shadow_enabled = true
-	sun.directional_shadow_max_distance = 65
-	sun.directional_shadow_mode = DirectionalLight3D.SHADOW_PARALLEL_4_SPLITS
-	add_child(sun)
-	camera = Camera3D.new()
-	camera.projection = Camera3D.PROJECTION_ORTHOGONAL
-	camera.size = 22
-	camera.far = 150
+func setup_map() -> void:
+	var map := get_node("StillwaterMap") as Node3D
+	var environment_node := map.get_node("WorldEnvironment") as WorldEnvironment
+	ambient_environment = environment_node.environment.duplicate() as Environment
+	environment_node.environment = ambient_environment
+	key_light = map.get_node("KeyLight") as DirectionalLight3D
+	camera = map.get_node("Camera3D") as Camera3D
 	camera.current = true
-	add_child(camera)
-	# Foundation floats above dark water, with visibly constructed stone courses.
-	F.box(self,Vector3(0,-1.1,-2),Vector3(37,2,38),edge)
-	F.box(self,Vector3(0,-0.15,-2),Vector3(36,0.3,37),stone)
-	var water_mat := F.water()
-	F.box(self,Vector3(0,-1.5,0),Vector3(180,0.08,180),water_mat)
-	# Irregular paving, moss in joints and shallow reflective rain pools.
-	var paving := MultiMeshInstance3D.new()
-	var stones := MultiMesh.new()
-	stones.transform_format = MultiMesh.TRANSFORM_3D
-	stones.mesh = F.paver_mesh()
-	stones.instance_count = 35*29
-	paving.multimesh = stones
-	paving.material_override = F.weathered(Color("82918b"),3.5)
-	add_child(paving)
-	for x in range(35):
-		for z in range(29):
-			var p := Vector3((x-17)*1.01 + (0.16 if z%2 else 0.0),0.013,(z-15)*1.26)
-			stones.set_instance_transform(x*29+z,Transform3D(Basis.IDENTITY,p))
-	var moss := F.material(Color("465e4b"))
-	for i in range(130):
-		var p := Vector3(rng.randf_range(-17,17),0.044,rng.randf_range(-18,14))
-		if absf(p.x) < 4 and p.z > -5: continue
-		F.box(self,p,Vector3(rng.randf_range(0.1,0.7),0.018,rng.randf_range(0.1,0.5)),moss)
-	for i in range(16):
-		var p := Vector3(rng.randf_range(-16,16),0.046,rng.randf_range(-17,13))
-		var puddle := F.cylinder(self,p,rng.randf_range(0.4,1.3),0.008,F.material(Color("334f55"),0.75,0.15),-1,16)
-		puddle.scale.z = 0.45
-	# Main circular seal court and restrained inlaid bronze rings.
-	F.cylinder(self,Vector3(0,0.055,0),4.1,0.1,F.weathered(Color("546c68"),4.0),-1,64)
-	for radius in [3.6,3.85]: F.ring(self,Vector3(0,0.112,0),radius,0.025,gold)
-	for i in range(8):
-		var a := i*TAU/8
-		var inlay := F.box(self,Vector3(sin(a)*3.25,0.12,cos(a)*3.25),Vector3(0.05,0.01,0.45),gold)
-		inlay.rotation.y = a
-	# Low perimeter parapet with gaps at gates.
-	for z in range(-18,16,3):
-		for x in [-18,18]:
-			F.box(self,Vector3(x,0.35,z),Vector3(0.45,0.75,2.75),edge,true)
-	for x in range(-16,18,3):
-		if abs(x) < 3: continue
-		F.box(self,Vector3(x,0.35,16),Vector3(2.75,0.75,0.45),edge,true)
-	build_gate(Vector3(0,0,12),1.0)
-	build_shrine(Vector3(0,0,-17))
-	for position in [Vector3(-11,0,-6),Vector3(11,0,-6),Vector3(0,0,-13)]:
-		build_seal(position)
-	for p in [Vector3(-13,0,8),Vector3(13,0,7),Vector3(-15,0,-13),Vector3(14,0,-14),Vector3(-8,0,-18)]:
-		build_tree(p)
-	for p in [Vector3(-5,0,10),Vector3(5,0,10),Vector3(-7,0,-5),Vector3(7,0,-5),Vector3(-4,0,-13),Vector3(4,0,-13)]:
-		build_lantern(p)
-	for i in range(27):
-		var side := -1 if i % 2 == 0 else 1
-		var p := Vector3(side*rng.randf_range(20,35),rng.randf_range(-4,-1),rng.randf_range(-35,22))
-		var rock := F.cylinder(self,p,rng.randf_range(2,5),rng.randf_range(4,13),edge,rng.randf_range(0.4,2),5)
-		rock.rotation.z = rng.randf_range(-0.2,0.2)
+	seals.clear()
+	for i in range(3):
+		seals.append(map.get_node("SealPlatforms/Seal_%02d" % (i + 1)) as Node3D)
+	fireflies.clear()
 	for i in range(35):
-		var mote := F.sphere(self,Vector3(rng.randf_range(-17,17),rng.randf_range(0.5,3),rng.randf_range(-17,15)),0.025,F.material(Color("edbd77"),0,0.6,2.0))
-		fireflies.append(mote)
-	preload("res://scripts/rebirth/CourtyardDetail.gd").build(self)
-	build_rain()
-
-func build_gate(p: Vector3, scale_factor: float) -> void:
-	var gate := Node3D.new()
-	gate.position = p
-	gate.scale *= scale_factor
-	add_child(gate)
-	for x in [-2.8,2.8]:
-		F.box(gate,Vector3(x,1.9,0),Vector3(0.4,3.8,0.4),wood,true)
-		F.box(gate,Vector3(x,0.2,0),Vector3(0.7,0.4,0.7),edge)
-		F.box(gate,Vector3(x,3.0,0),Vector3(0.52,0.12,0.52),gold)
-	F.box(gate,Vector3(0,3.25,0),Vector3(6.4,0.25,0.32),wood)
-	F.box(gate,Vector3(0,3.85,0),Vector3(7.2,0.3,0.6),dark)
-	for side in [-1,1]:
-		var end := F.box(gate,Vector3(side*3.55,3.98,0),Vector3(1.0,0.21,0.62),dark)
-		end.rotation.z = side*0.22
-	F.box(gate,Vector3(0,3.43,0),Vector3(0.7,0.8,0.18),gold)
-	F.box(gate,Vector3(0,3.43,0.1),Vector3(0.48,0.58,0.05),dark)
-
-func build_shrine(p: Vector3) -> void:
-	var shrine := Node3D.new()
-	shrine.position = p
-	add_child(shrine)
-	F.box(shrine,Vector3(0,0.3,-1.3),Vector3(9,0.6,4.5),edge,true)
-	for x in [-3.6,-1.2,1.2,3.6]:
-		F.box(shrine,Vector3(x,2,-1.6),Vector3(0.32,3.4,0.32),wood,true)
-	F.box(shrine,Vector3(0,2.0,-2.8),Vector3(7.6,3.4,0.2),wood,true)
-	for i in range(-9,10):
-		F.box(shrine,Vector3(i*0.4,2.1,-2.6),Vector3(0.04,2.5,0.1),gold)
-	for side in [-1,1]:
-		var roof := F.box(shrine,Vector3(0,4.05,side*0.8-1.4),Vector3(10,0.22,2.8),dark)
-		roof.rotation.x = side*0.28
-		for i in range(-12,13):
-			F.beam(shrine,Vector3(i*0.4,4.43,-1.4),Vector3(i*0.4,3.65,side*2.65-1.4),0.07,edge)
-	F.box(shrine,Vector3(0,4.48,-1.4),Vector3(10.4,0.15,0.24),gold)
-
-func build_tree(p: Vector3) -> void:
-	var tree := Node3D.new()
-	tree.position = p
-	add_child(tree)
-	F.cylinder(tree,Vector3(0,1.8,0),0.27,3.6,wood,0.12,7)
-	var trunk_body := StaticBody3D.new()
-	var trunk_shape := CollisionShape3D.new()
-	var trunk := CylinderShape3D.new()
-	trunk.radius = 0.3
-	trunk.height = 3.6
-	trunk_shape.shape = trunk
-	trunk_shape.position.y = 1.8
-	trunk_body.add_child(trunk_shape)
-	tree.add_child(trunk_body)
-	var clusters: Array[Vector3] = []
-	for i in range(7):
-		var a := i*2.4
-		var end := Vector3(sin(a)*1.8,3.0+rng.randf(),cos(a)*1.5)
-		F.beam(tree,Vector3(0,1.6,0),end,0.14,wood)
-		clusters.append(end)
-	var canopy := MultiMeshInstance3D.new()
-	var leaf_data := MultiMesh.new()
-	leaf_data.transform_format = MultiMesh.TRANSFORM_3D
-	leaf_data.use_colors = true
-	leaf_data.mesh = F.leaf_mesh()
-	leaf_data.instance_count = 1500
-	canopy.multimesh = leaf_data
-	var leaf_material := F.foliage(Color("c26b3e"))
-	canopy.material_override = leaf_material
-	tree.add_child(canopy)
-	for i in range(1500):
-		var center: Vector3 = clusters[i%7]
-		var angle := rng.randf()*TAU
-		var radius := sqrt(rng.randf())*1.5
-		var offset := Vector3(cos(angle)*radius,rng.randf_range(-0.22,0.4)*(1-radius/2),sin(angle)*radius)
-		var basis := Basis.from_euler(Vector3(rng.randf_range(-0.5,0.5),rng.randf()*TAU,rng.randf_range(-0.4,0.4)))
-		basis = basis.scaled(Vector3.ONE*rng.randf_range(0.8,1.4))
-		leaf_data.set_instance_transform(i,Transform3D(basis,center+offset))
-		leaf_data.set_instance_color(i,Color(1.0,rng.randf_range(0.65,1),rng.randf_range(0.6,1)))
-	for i in range(18):
-		var leaf := F.box(tree,Vector3(rng.randf_range(-2.5,2.5),0.06,rng.randf_range(-2.5,2.5)),Vector3(0.12,0.025,0.2),leaves)
-		leaf.rotation.y = rng.randf()*TAU
-
-func build_lantern(p: Vector3) -> void:
-	F.box(self,p+Vector3(0,0.12,0),Vector3(0.85,0.24,0.85),edge)
-	F.box(self,p+Vector3(0,0.62,0),Vector3(0.32,0.8,0.32),stone,true)
-	F.box(self,p+Vector3(0,1.18,0),Vector3(0.58,0.46,0.58),F.material(Color("eec588"),0,0.7,2.5))
-	F.cylinder(self,p+Vector3(0,1.5,0),0.55,0.3,dark,0.07,4)
-	for x in [-0.3,0.3]:
-		for z in [-0.3,0.3]: F.box(self,p+Vector3(x,1.17,z),Vector3(0.07,0.55,0.07),dark)
-	var light := OmniLight3D.new()
-	light.position = p+Vector3(0,1.35,0)
-	light.light_color = Color("ffbe77")
-	light.light_energy = 2.1
-	light.omni_range = 4
-	add_child(light)
-
-func build_seal(p: Vector3) -> void:
-	var seal := Node3D.new()
-	seal.position = p
-	add_child(seal)
-	F.cylinder(seal,Vector3(0,0.14,0),1.25,0.28,edge,-1,8)
-	F.ring(seal,Vector3(0,0.3,0),1.0,0.04,gold)
-	F.cylinder(seal,Vector3(0,0.66,0),0.38,0.9,stone,0.28,6)
-	var body := StaticBody3D.new()
-	var collider := CollisionShape3D.new()
-	var column := CylinderShape3D.new()
-	column.radius = 0.4
-	column.height = 1.1
-	collider.shape = column
-	collider.position.y = 0.55
-	body.add_child(collider)
-	seal.add_child(body)
-	var core := F.sphere(seal,Vector3(0,1.45,0),0.23,F.material(Color("97c5be"),0.2,0.3,2))
-	core.name = "Core"
-	var light := OmniLight3D.new()
-	light.position.y = 1.7
-	light.light_color = Color("73b9b6")
-	light.light_energy = 1.5
-	light.omni_range = 3
-	seal.add_child(light)
-	seals.append(seal)
-
-func build_rain() -> void:
-	var rain := GPUParticles3D.new()
-	rain.amount = 800
-	rain.lifetime = 1.8
-	rain.visibility_aabb = AABB(Vector3(-30,-2,-30),Vector3(60,25,60))
-	var process := ParticleProcessMaterial.new()
-	process.emission_shape = ParticleProcessMaterial.EMISSION_SHAPE_BOX
-	process.emission_box_extents = Vector3(23,1,23)
-	process.direction = Vector3(-0.15,-1,0)
-	process.spread = 2
-	process.initial_velocity_min = 10
-	process.initial_velocity_max = 14
-	process.gravity = Vector3(0,-4,0)
-	process.color = Color(0.65,0.8,0.84,0.2)
-	rain.process_material = process
-	var mesh := BoxMesh.new()
-	mesh.size = Vector3(0.008,0.2,0.008)
-	mesh.material = F.material(Color(0.7,0.8,0.83,0.2))
-	rain.draw_pass_1 = mesh
-	rain.position.y = 15
-	add_child(rain)
+		fireflies.append(map.get_node("Fireflies/Firefly_%02d" % (i + 1)) as Node3D)
+	gold = F.material(Color("b89a61"),0.65,0.4)
+	preload("res://scripts/rebirth/CourtyardDetail.gd").attach_atmosphere(self)
 
 func _process(delta: float) -> void:
 	elapsed += delta

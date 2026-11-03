@@ -13,7 +13,7 @@ config_version=5
 config/name="Moonlit Jianghu"
 config/version="0.4.1"
 run/main_scene="res://scenes/rebirth/Stillwater.tscn"
-config/features=PackedStringArray("4.6", "Forward Plus")
+config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
@@ -25,6 +25,10 @@ Soundscape="*res://scripts/interface/Soundscape.gd"
 window/size/viewport_width=1280
 window/size/viewport_height=720
 window/stretch/mode="viewport"
+
+[gui]
+
+theme/custom_font="res://assets/fonts/NotoSansSC.ttf"
 
 [input]
 
@@ -149,10 +153,6 @@ toggle_inventory={
 "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":77,"physical_keycode":0,"key_label":0,"unicode":109,"location":0,"echo":false,"script":null)
 ]
 }
-
-[gui]
-
-theme/custom_font="res://assets/fonts/NotoSansSC.ttf"
 
 [physics]
 

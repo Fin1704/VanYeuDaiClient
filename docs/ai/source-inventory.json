@@ -1,0 +1,6188 @@
+{
+  "snapshot_date": "2026-11-03",
+  "scope": "Local working tree source/config/data; excludes binary contents, generated cache, historical document text and local editor settings. GLB JSON inspected separately.",
+  "original_source_file_count": 166,
+  "files": [
+    {
+      "path": ".editorconfig",
+      "module": "project-runtime",
+      "review": "full",
+      "lines": 4,
+      "sha256": "3b2c749c8a940905a08f727d8be9017c9568a12421c0aee7e37e9543b3751b1b",
+      "symbols": [],
+      "resource_literals": []
+    },
+    {
+      "path": ".gitattributes",
+      "module": "project-runtime",
+      "review": "full",
+      "lines": 2,
+      "sha256": "21b01a606c9f85f18bb9230245f00ab104df7409cbb2fe9423f6751ca72ba754",
+      "symbols": [],
+      "resource_literals": []
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug-report.yml",
+      "module": "project-runtime",
+      "review": "full",
+      "lines": 63,
+      "sha256": "f048971056d3299efe4dd3a406fd86472b863083eb3a5db9c9ccbdb826e4a625",
+      "symbols": [],
+      "resource_literals": []
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "module": "project-runtime",
+      "review": "full",
+      "lines": 8,
+      "sha256": "239392d136c83274f64f84d05ea47a18d756185ba948abafece1fae114bbeb1f",
+      "symbols": [],
+      "resource_literals": []
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/playtest-feedback.yml",
+      "module": "project-runtime",
+      "review": "full",
+      "lines": 51,
+      "sha256": "ea576f68d5ee7a4b8de2df2bb8b6e894c4de9d1e69396f4547cd8d52aa8bb5b3",
+      "symbols": [],
+      "resource_literals": []
+    },
+    {
+      "path": ".gitignore",
+      "module": "project-runtime",
+      "review": "full",
+      "lines": 23,
+      "sha256": "596819ef2026328d90e69e89fb46fdac79f83fe603df67eb4005b5ee68b04f18",
+      "symbols": [],
+      "resource_literals": []
+    },
+    {
+      "path": "assets/characters/kaykit/Knight.glb.import",
+      "module": "asset-pipeline",
+      "review": "full",
+      "lines": 45,
+      "sha256": "9819fc5ace22573ed549d4cc97aa31210238d4df389df90162fec7707aa2c383",
+      "symbols": [],
+      "resource_literals": [
+        "res://.godot/imported/Knight.glb-efb07bef8d87663092bb79af537644ef.scn",
+        "res://assets/characters/kaykit/Knight.glb"
+      ]
+    },
+    {
+      "path": "assets/characters/kaykit/Mage.glb.import",
+      "module": "asset-pipeline",
+      "review": "full",
+      "lines": 45,
+      "sha256": "29d635d3615192c264f26812485558bc6aca0fb41db5cdea080dd1aa49d2970b",
+      "symbols": [],
+      "resource_literals": [
+        "res://.godot/imported/Mage.glb-0789c0583effe9900ea3381bb16e1be4.scn",
+        "res://assets/characters/kaykit/Mage.glb"
+      ]
+    },
+    {
+      "path": "assets/characters/kaykit/Rogue_Hooded.glb.import",
+      "module": "asset-pipeline",
+      "review": "full",
+      "lines": 45,
+      "sha256": "16f23e84c18b49a53c6644356bb6cd0269110604412993e1e31770c0619c3cf3",
+      "symbols": [],
+      "resource_literals": [
+        "res://.godot/imported/Rogue_Hooded.glb-8fbcd1d6956c5ef4829a2f662b3cf666.scn",
+        "res://assets/characters/kaykit/Rogue_Hooded.glb"
+      ]
+    },
+    {
+      "path": "assets/fonts/StillwaterSans.tres",
+      "module": "asset-pipeline",
+      "review": "full",
+      "lines": 9,
+      "sha256": "5216af527bbb4923698c0d937099d02d816b27452ddd3f4bc5b3cc7429996f7f",
+      "symbols": [],
+      "resource_literals": [
+        "res://assets/fonts/NotoSansSC.ttf"
+      ]
+    },
+    {
+      "path": "assets/fonts/StillwaterSerif.tres",
+      "module": "asset-pipeline",
+      "review": "full",
+      "lines": 9,
+      "sha256": "f291dbff11c849de404dbbef0bdb0905de78036235fb3c02d51c3a8addd0b740",
+      "symbols": [],
+      "resource_literals": [
+        "res://assets/fonts/NotoSerifSC.ttf"
+      ]
+    },
+    {
+      "path": "assets/xianxia/animation_intent.json",
+      "module": "asset-pipeline",
+      "review": "full",
+      "lines": 40,
+      "sha256": "045d546f41e0c934dd90c7396d6e728bc68ad69743623bfdcf84b11b954358d1",
+      "symbols": [],
+      "resource_literals": []
+    },
+    {
+      "path": "assets/xianxia/asset_manifest.json",
+      "module": "asset-pipeline",
+      "review": "full",
+      "lines": 102,
+      "sha256": "efd279ab8abb399d05c2140b4521ed9f8757c4432f85a91a80fc42d85ccfd0af",
+      "symbols": [],
+      "resource_literals": []
+    },
+    {
+      "path": "assets/xianxia/evil_rogue_enemy_transparent_pack/manifest.json",
+      "module": "asset-pipeline",
+      "review": "full",
+      "lines": 37,
+      "sha256": "c9eb086490cd1440289627f363311c2f9ea328147399614d845d888b81bd53ed",
+      "symbols": [],
+      "resource_literals": []
+    },
+    {
+      "path": "export_presets.cfg",
+      "module": "project-runtime",
+      "review": "structured",
+      "lines": 842,
+      "sha256": "6b1137e35f10d1896b915b33c4c2775f3b9e68b803bfe202bdd7d22449c11196",
+      "symbols": [],
+      "resource_literals": []
+    },
+    {
+      "path": "project.godot",
+      "module": "project-runtime",
+      "review": "full",
+      "lines": 167,
+      "sha256": "7c728aa734fe47238554fdc0b2c4cff2cef9fab6e34245d0ec83f03c0d3ab199",
+      "symbols": [],
+      "resource_literals": [
+        "res://assets/fonts/NotoSansSC.ttf",
+        "res://icon.svg",
+        "res://scenes/rebirth/Stillwater.tscn"
+      ]
+    },
+    {
+      "path": "resources/shaders/glow_outline.gdshader",
+      "module": "legacy-environment",
+      "review": "full",
+      "lines": 18,
+      "sha256": "9918953fa067713497e973e704705c8258645273c6236ca5938d5afe4d886feb",
+      "symbols": [],
+      "resource_literals": []
+    },
+    {
+      "path": "resources/shaders/grass_glow.gdshader",
+      "module": "legacy-environment",
+      "review": "full",
+      "lines": 24,
+      "sha256": "f5c885129bff473104c5e447d65cf844ca40755cd3053ac8bb8fe4ff089422c3",
+      "symbols": [],
+      "resource_literals": []
+    },
+    {
+      "path": "resources/shaders/grass_wind.gdshader",
+      "module": "legacy-environment",
+      "review": "full",
+      "lines": 14,
+      "sha256": "53e54691e6cbc63ad34013f9f3c0b97625b817fce39dd0e9ebad505e8e756e16",
+      "symbols": [],
+      "resource_literals": []
+    },
+    {
+      "path": "resources/skills/JadeTempest.tres",
+      "module": "legacy-skills",
+      "review": "full",
+      "lines": 10,
+      "sha256": "35c74e2fe842d880fdcbdb5e46d8ef288fdadb7c5c6292244151e4f6c896c05b",
+      "symbols": [],
+      "resource_literals": [
+        "res://scenes/skills/JadeTempest.tscn",
+        "res://scripts/skills/SkillDefinition.gd"
+      ]
+    },
+    {
+      "path": "resources/skills/MoonCleave.tres",
+      "module": "legacy-skills",
+      "review": "full",
+      "lines": 10,
+      "sha256": "5c7604ac086e6cdc83804688fd64c57c53509c1d2e2828492e5c0f39ee838f79",
+      "symbols": [],
+      "resource_literals": [
+        "res://scenes/skills/MoonCleave.tscn",
+        "res://scripts/skills/SkillDefinition.gd"
+      ]
+    },
+    {
+      "path": "resources/skills/ProtectiveDivineLight.tres",
+      "module": "legacy-skills",
+      "review": "full",
+      "lines": 13,
+      "sha256": "7729ebafcc7c864a0ceb229ca92f99c9538d1ef555c9dfa938cdbd05f72188b9",
+      "symbols": [],
+      "resource_literals": [
+        "res://scenes/skills/ProtectiveDivineLightEffect.tscn",
+        "res://scripts/skills/SkillDefinition.gd"
+      ]
+    },
+    {
+      "path": "resources/skills/Renewal.tres",
+      "module": "legacy-skills",
+      "review": "full",
+      "lines": 10,
+      "sha256": "1c427664916911452a81366e79080b737100c922a3e4833b04e6446e32f764e1",
+      "symbols": [],
+      "resource_literals": [
+        "res://scenes/skills/Renewal.tscn",
+        "res://scripts/skills/SkillDefinition.gd"
+      ]
+    },
+    {
+      "path": "resources/skills/Transform.tres",
+      "module": "legacy-skills",
+      "review": "full",
+      "lines": 13,
+      "sha256": "db2fc66aa130cacab2e7e6fc13fce3b83d9a97b55c5b4fce3c898dce2aebbaf7",
+      "symbols": [],
+      "resource_literals": [
+        "res://scenes/skills/TransformSkillEffect.tscn",
+        "res://scripts/skills/SkillDefinition.gd"
+      ]
+    },
+    {
+      "path": "scenes/allies/Zombie.tscn",
+      "module": "legacy-actors",
+      "review": "full",
+      "lines": 71,
+      "sha256": "6bfed50061d45eba252ded33418aa9a59f11fa8c47f5837b6c3e3868de854441",
+      "symbols": [],
+      "resource_literals": [
+        "res://scripts/components/HealthComponent.gd",
+        "res://scripts/enemies/BasicEnemy.gd"
+      ]
+    },
+    {
+      "path": "scenes/boss/MountainGuardian.tscn",
+      "module": "legacy-actors",
+      "review": "full",
+      "lines": 12,
+      "sha256": "cd144029062f8ac7e3562c4a5fcd3c0ddba955f27e4345539ef1c583d00f980d",
+      "symbols": [],
+      "resource_literals": [
+        "res://scripts/boss/MountainGuardian.gd",
+        "res://scripts/components/HealthComponent.gd"
+      ]
+    },
+    {
+      "path": "scenes/effects/HitSpark.tscn",
+      "module": "legacy-interface",
+      "review": "full",
+      "lines": 17,
+      "sha256": "240c8407d58cc40756d3da48aa14965fade206e00d5242304555818fab4b216a",
+      "symbols": [],
+      "resource_literals": [
+        "res://scripts/effects/TimedEffect.gd"
+      ]
+    },
+    {
+      "path": "scenes/effects/ResurrectionAura.tscn",
+      "module": "legacy-interface",
+      "review": "full",
+      "lines": 17,
+      "sha256": "da898a75329b4c46fe5feb4ddde8182a4e1a87c38c8b422368fb7f34cb0e1770",
+      "symbols": [],
+      "resource_literals": [
+        "res://scripts/effects/TimedEffect.gd"
+      ]
+    },
+    {
+      "path": "scenes/effects/ResurrectionPuff.tscn",
+      "module": "legacy-interface",
+      "review": "full",
+      "lines": 17,
+      "sha256": "bf0b65f6341ad38f4e858f8f4e3d0695a027d87204d63d9086b128ac95dbf356",
+      "symbols": [],
+      "resource_literals": [
+        "res://scripts/effects/TimedEffect.gd"
+      ]
+    },
+    {
+      "path": "scenes/effects/SlashTrail.tscn",
+      "module": "legacy-interface",
+      "review": "full",
+      "lines": 16,
+      "sha256": "92992ac80e6b06e0d35a181c4dc954982bef49d6b482e1656edda07789d5b2e9",
+      "symbols": [],
+      "resource_literals": [
+        "res://scripts/effects/SlashTrail.gd"
+      ]
+    },
+    {
+      "path": "scenes/effects/SmashMark.tscn",
+      "module": "legacy-interface",
+      "review": "full",
+      "lines": 23,
+      "sha256": "77e9f373d8fce230f382e6c9d0c4646d5d2b9b36f9af51996532267cfbcdf0a4",
+      "symbols": [],
+      "resource_literals": [
+        "res://scripts/effects/TimedEffect.gd"
+      ]
+    },
+    {
+      "path": "scenes/enemies/BasicEnemy.tscn",
+      "module": "legacy-actors",
+      "review": "full",
+      "lines": 62,
+      "sha256": "1e0a860de328219c34e58708394f51ed326ed2c96ce86a57705d0981280258cb",
+      "symbols": [],
+      "resource_literals": [
+        "res://assets/xianxia/pixel_night_assets/light_circle.png",
+        "res://scripts/components/HealthComponent.gd",
+        "res://scripts/enemies/BasicEnemy.gd"
+      ]
+    },
+    {
+      "path": "scenes/enemies/ChestMimic.tscn",
+      "module": "legacy-actors",
+      "review": "full",
+      "lines": 91,
+      "sha256": "1667cbe2be25c2e25a1b8bf09b002decee18ae233d35ee93d2f65ba3375ca3fd",
+      "symbols": [],
+      "resource_literals": [
+        "res://scripts/components/HealthComponent.gd",
+        "res://scripts/enemies/BasicEnemy.gd"
+      ]
+    },
+    {
+      "path": "scenes/enemies/FastEnemy.tscn",
+      "module": "legacy-actors",
+      "review": "full",
+      "lines": 71,
+      "sha256": "a4304830d76159664da8ce9360696f1b8d9a36cac5df6194a5011a4562efe471",
+      "symbols": [],
+      "resource_literals": [
+        "res://scripts/components/HealthComponent.gd",
+        "res://scripts/enemies/BasicEnemy.gd"
+      ]
+    },
+    {
+      "path": "scenes/enemies/FireLionEnemy.tscn",
+      "module": "legacy-actors",
+      "review": "full",
+      "lines": 72,
+      "sha256": "18a47fb098245bab00245ef2c1c82a43515c576191a1a97740006557dd4758f3",
+      "symbols": [],
+      "resource_literals": [
+        "res://assets/xianxia/pixel_night_assets/light_circle.png",
+        "res://scripts/components/HealthComponent.gd",
+        "res://scripts/enemies/BasicEnemy.gd"
+      ]
+    },
+    {
+      "path": "scenes/interface/TitleScreen.tscn",
+      "module": "project-runtime",
+      "review": "full",
+      "lines": 10,
+      "sha256": "0725e5e9ed03bdaf534da60c72a6cbd1e99b6c3f72274d51afc5c2d1fee489cc",
+      "symbols": [],
+      "resource_literals": [
+        "res://scripts/interface/TitleScreen.gd"
+      ]
+    },
+    {
+      "path": "scenes/main/Main.tscn",
+      "module": "project-runtime",
+      "review": "full",
+      "lines": 8,
+      "sha256": "68b2623cac9298814888ccad774fcb18cb1e17fabcc70e385771ca88d4b2d9b6",
+      "symbols": [],
+      "resource_literals": [
+        "res://scenes/world/World.tscn"
+      ]
+    },
+    {
+      "path": "scenes/player/Player.tscn",
+      "module": "legacy-actors",
+      "review": "full",
+      "lines": 127,
+      "sha256": "00063c9ae77c164451c148d52cce8125710ec32c1e5dd8a2eb42b63438b70d17",
+      "symbols": [],
+      "resource_literals": [
+        "res://assets/xianxia/pixel_night_assets/light_circle.png",
+        "res://scripts/components/HealthComponent.gd",
+        "res://scripts/player/PlayerController.gd",
+        "res://scripts/skills/SkillCaster.gd"
+      ]
+    },
+    {
+      "path": "scenes/rebirth/CourtyardBackdrop.tscn",
+      "module": "stillwater-presentation",
+      "review": "structured",
+      "lines": 477,
+      "sha256": "dd415cec358d0ac8224bab5efa7d4c4169d56ba378f0c99f40d3a2f413da3613",
+      "symbols": [],
+      "resource_literals": [
+        "res://scripts/rebirth/shaders/FallingLeaves.gdshader",
+        "res://scripts/rebirth/shaders/LakeMist.gdshader",
+        "res://scripts/rebirth/shaders/RainRipples.gdshader"
+      ]
+    },
+    {
+      "path": "scenes/rebirth/Stillwater.tscn",
+      "module": "project-runtime",
+      "review": "full",
+      "lines": 9,
+      "sha256": "583ea7b76757d9d75bb0625d31c800800bec0bbed22c28c469b56a40706d497c",
+      "symbols": [],
+      "resource_literals": [
+        "res://scenes/rebirth/StillwaterMap.tscn",
+        "res://scripts/rebirth/Stillwater.gd"
+      ]
+    },
+    {
+      "path": "scenes/rebirth/StillwaterMap.tscn",
+      "module": "stillwater-presentation",
+      "review": "structured",
+      "lines": 6973,
+      "sha256": "52f9f0ed563dc4e58ef846b8649e23d0d62e21aeec155905a9fbb75bf3529ba4",
+      "symbols": [],
+      "resource_literals": [
+        "res://scenes/rebirth/CourtyardBackdrop.tscn",
+        "res://scripts/rebirth/shaders/Foliage.gdshader",
+        "res://scripts/rebirth/shaders/Grass.gdshader",
+        "res://scripts/rebirth/shaders/Lake.gdshader",
+        "res://scripts/rebirth/shaders/Weathered.gdshader"
+      ]
+    },
+    {
+      "path": "scenes/skills/JadeTempest.tscn",
+      "module": "legacy-skills",
+      "review": "full",
+      "lines": 5,
+      "sha256": "d04e35233bfeb7a9c3996b504205d9d893f8e2fec932517b834af28fecc3787e",
+      "symbols": [],
+      "resource_literals": [
+        "res://scripts/skills/MartialSkillEffect.gd"
+      ]
+    },
+    {
+      "path": "scenes/skills/MoonCleave.tscn",
+      "module": "legacy-skills",
+      "review": "full",
+      "lines": 5,
+      "sha256": "891ac2885640b4b5db1e10df8efc2e047e7118952902f876ffe94e84aed3039f",
+      "symbols": [],
+      "resource_literals": [
+        "res://scripts/skills/MartialSkillEffect.gd"
+      ]
+    },
+    {
+      "path": "scenes/skills/ProtectiveDivineLightEffect.tscn",
+      "module": "legacy-skills",
+      "review": "full",
+      "lines": 37,
+      "sha256": "e0d36324ebc4a028ea2623bd6816e56b7f054f2b327a04afa681523c14768493",
+      "symbols": [],
+      "resource_literals": [
+        "res://scripts/skills/ProtectiveDivineLightEffect.gd"
+      ]
+    },
+    {
+      "path": "scenes/skills/Renewal.tscn",
+      "module": "legacy-skills",
+      "review": "full",
+      "lines": 5,
+      "sha256": "5aa2163346dd770c3ae648ec15f6911db34b2f6d9f22afd9c1998de7c722ef45",
+      "symbols": [],
+      "resource_literals": [
+        "res://scripts/skills/MartialSkillEffect.gd"
+      ]
+    },
+    {
+      "path": "scenes/skills/TransformSkillEffect.tscn",
+      "module": "legacy-skills",
+      "review": "full",
+      "lines": 12,
+      "sha256": "7816a602788d8d54fd79bce8d46a20eb7eba686cea0da889c5ae29cb1017a3eb",
+      "symbols": [],
+      "resource_literals": [
+        "res://scenes/allies/Zombie.tscn",
+        "res://scenes/effects/ResurrectionAura.tscn",
+        "res://scenes/effects/ResurrectionPuff.tscn",
+        "res://scripts/skills/TransformSkillEffect.gd"
+      ]
+    },
+    {
+      "path": "scenes/world/AmbientMagicController.tscn",
+      "module": "legacy-environment",
+      "review": "full",
+      "lines": 22,
+      "sha256": "d43d30a53dad88dd564ba9c20f3ed426ee8be51ad4f2c3bd06c6ec9b037defb4",
+      "symbols": [],
+      "resource_literals": [
+        "res://scripts/world/AmbientMagicController.gd"
+      ]
+    },
+    {
+      "path": "scenes/world/ChestEncounter.tscn",
+      "module": "legacy-world",
+      "review": "full",
+      "lines": 35,
+      "sha256": "92328cf389b759c4b0729ad3ab026f95fcdf7bc91f020f6f8ff73c054528fb78",
+      "symbols": [],
+      "resource_literals": [
+        "res://scenes/enemies/ChestMimic.tscn",
+        "res://scripts/world/ChestEncounter.gd"
+      ]
+    },
+    {
+      "path": "scenes/world/NightAmbienceController.tscn",
+      "module": "legacy-environment",
+      "review": "full",
+      "lines": 40,
+      "sha256": "359abae1e011a2be9ca27abf4f1756266473907ed29be4dd273db676cbf72eda",
+      "symbols": [],
+      "resource_literals": [
+        "res://scripts/world/NightAmbienceController.gd"
+      ]
+    },
+    {
+      "path": "scenes/world/World.tscn",
+      "module": "legacy-world",
+      "review": "full",
+      "lines": 190,
+      "sha256": "de29fe263daef61539d5de5d4509223528589b5b389ef4ca13a7d44285c272e8",
+      "symbols": [],
+      "resource_literals": [
+        "res://assets/art_v2/terrain_qinglan.png",
+        "res://assets/xianxia/houses.png",
+        "res://scenes/enemies/BasicEnemy.tscn",
+        "res://scenes/enemies/FastEnemy.tscn",
+        "res://scenes/enemies/FireLionEnemy.tscn",
+        "res://scenes/player/Player.tscn",
+        "res://scenes/world/ChestEncounter.tscn",
+        "res://scenes/world/placeholders/BoundaryWall.tscn",
+        "res://scenes/world/placeholders/BreakableCrate.tscn",
+        "res://scenes/world/placeholders/HousePlaceholder.tscn",
+        "res://scenes/world/placeholders/ObstaclePlaceholder.tscn",
+        "res://scenes/world/placeholders/TreePlaceholder.tscn",
+        "res://scripts/world/World.gd",
+        "res://ui/Hud.tscn"
+      ]
+    },
+    {
+      "path": "scenes/world/placeholders/BoundaryWall.tscn",
+      "module": "legacy-environment",
+      "review": "full",
+      "lines": 13,
+      "sha256": "5eec2d1e71a6c03ed3569569b3daa57e98b6f716ebf71ddb4f45e463f9de5d88",
+      "symbols": [],
+      "resource_literals": [
+        "res://scripts/world/PlaceholderObstacle.gd"
+      ]
+    },
+    {
+      "path": "scenes/world/placeholders/BreakableCrate.tscn",
+      "module": "legacy-world",
+      "review": "full",
+      "lines": 14,
+      "sha256": "ccae8dee17b5067e3cc61318a4f60dcb666a7e97231587aaf48d9eb6a4e2e1a1",
+      "symbols": [],
+      "resource_literals": [
+        "res://scripts/world/BreakableCrate.gd"
+      ]
+    },
+    {
+      "path": "scenes/world/placeholders/HousePlaceholder.tscn",
+      "module": "legacy-environment",
+      "review": "full",
+      "lines": 22,
+      "sha256": "30b20417b0280c50cc233ead3d15a9d3164dd24058f6faafc1ef2cd843fe6060",
+      "symbols": [],
+      "resource_literals": [
+        "res://scripts/world/PlaceholderObstacle.gd"
+      ]
+    },
+    {
+      "path": "scenes/world/placeholders/ObstaclePlaceholder.tscn",
+      "module": "legacy-environment",
+      "review": "full",
+      "lines": 27,
+      "sha256": "9ae872dd48e721edccf91ee89a8a9b3cb9c78322494650516c58fc654848002b",
+      "symbols": [],
+      "resource_literals": [
+        "res://assets/xianxia/rock.png",
+        "res://scripts/world/PlaceholderObstacle.gd"
+      ]
+    },
+    {
+      "path": "scenes/world/placeholders/TreePlaceholder.tscn",
+      "module": "legacy-environment",
+      "review": "full",
+      "lines": 21,
+      "sha256": "44ea615bb278286b14a531de35358ca511dd9e6694c45240d6fc066e40f33033",
+      "symbols": [],
+      "resource_literals": [
+        "res://assets/art_v2/tree_jade.png",
+        "res://scripts/world/PlaceholderObstacle.gd"
+      ]
+    },
+    {
+      "path": "scripts/boss/MountainGuardian.gd",
+      "module": "legacy-actors",
+      "review": "full",
+      "lines": 147,
+      "sha256": "fbff29a25992122f712f1067332537518aafaa138f85c0eb260729f8623d0426",
+      "symbols": [
+        {
+          "name": "defeated",
+          "line": 3
+        },
+        {
+          "name": "_ready",
+          "line": 22
+        },
+        {
+          "name": "_physics_process",
+          "line": 39
+        },
+        {
+          "name": "_release_pulse",
+          "line": 97
+        },
+        {
+          "name": "_draw",
+          "line": 110
+        },
+        {
+          "name": "is_attack_target_active",
+          "line": 123
+        },
+        {
+          "name": "apply_knockback",
+          "line": 126
+        },
+        {
+          "name": "apply_stagger",
+          "line": 129
+        },
+        {
+          "name": "is_hit_from_behind",
+          "line": 132
+        },
+        {
+          "name": "_on_damaged",
+          "line": 135
+        },
+        {
+          "name": "_on_died",
+          "line": 138
+        }
+      ],
+      "resource_literals": [
+        "res://assets/art_v2/mountain_guardian.png",
+        "res://scenes/skills/JadeTempest.tscn"
+      ]
+    },
+    {
+      "path": "scripts/components/HealthComponent.gd",
+      "module": "legacy-actors",
+      "review": "full",
+      "lines": 32,
+      "sha256": "e54e8ad9d23ea84ec3c5e2ce3507d9dc8988824282740064da6aa3153ddcf308",
+      "symbols": [
+        {
+          "name": "HealthComponent",
+          "line": 2
+        },
+        {
+          "name": "health_changed",
+          "line": 4
+        },
+        {
+          "name": "damaged",
+          "line": 5
+        },
+        {
+          "name": "died",
+          "line": 6
+        },
+        {
+          "name": "_ready",
+          "line": 12
+        },
+        {
+          "name": "take_damage",
+          "line": 16
+        },
+        {
+          "name": "heal",
+          "line": 27
+        }
+      ],
+      "resource_literals": []
+    },
+    {
+      "path": "scripts/effects/SlashTrail.gd",
+      "module": "legacy-interface",
+      "review": "full",
+      "lines": 45,
+      "sha256": "f26c307e805edad66ed112f0f50ed48a9f31883e1bbab03768f2a835d8c56de2",
+      "symbols": [
+        {
+          "name": "setup",
+          "line": 7
+        },
+        {
+          "name": "_ribbon",
+          "line": 30
+        },
+        {
+          "name": "_process",
+          "line": 40
+        }
+      ],
+      "resource_literals": []
+    },
+    {
+      "path": "scripts/effects/TimedEffect.gd",
+      "module": "legacy-interface",
+      "review": "full",
+      "lines": 27,
+      "sha256": "daf2be0558c2dd9b4d4230238ccc802fe2e9e48be6d897b1713665317ed1e857",
+      "symbols": [
+        {
+          "name": "configure",
+          "line": 9
+        },
+        {
+          "name": "_ready",
+          "line": 17
+        },
+        {
+          "name": "_process",
+          "line": 20
+        }
+      ],
+      "resource_literals": []
+    },
+    {
+      "path": "scripts/enemies/BasicEnemy.gd",
+      "module": "legacy-actors",
+      "review": "full",
+      "lines": 1062,
+      "sha256": "9e077ec604d3cd0b1629e3c527faeb64c55a16b9da3e4dfe6c0678e51a6e8e3e",
+      "symbols": [
+        {
+          "name": "_ready",
+          "line": 133
+        },
+        {
+          "name": "_process",
+          "line": 155
+        },
+        {
+          "name": "_physics_process",
+          "line": 159
+        },
+        {
+          "name": "apply_knockback",
+          "line": 236
+        },
+        {
+          "name": "apply_attack_hitback",
+          "line": 245
+        },
+        {
+          "name": "set_survival_mode",
+          "line": 250
+        },
+        {
+          "name": "find_nearest_target",
+          "line": 255
+        },
+        {
+          "name": "is_attack_target_active",
+          "line": 267
+        },
+        {
+          "name": "is_transformable_corpse",
+          "line": 270
+        },
+        {
+          "name": "get_visual_accent_color",
+          "line": 275
+        },
+        {
+          "name": "_assign_faction_groups",
+          "line": 280
+        },
+        {
+          "name": "_apply_faction_visuals",
+          "line": 288
+        },
+        {
+          "name": "_collect_target_candidates",
+          "line": 298
+        },
+        {
+          "name": "_is_valid_target",
+          "line": 313
+        },
+        {
+          "name": "_compute_separation_force",
+          "line": 320
+        },
+        {
+          "name": "_get_chase_direction",
+          "line": 332
+        },
+        {
+          "name": "_is_direction_blocked",
+          "line": 359
+        },
+        {
+          "name": "_get_path_direction",
+          "line": 375
+        },
+        {
+          "name": "apply_recoil",
+          "line": 385
+        },
+        {
+          "name": "apply_stagger",
+          "line": 389
+        },
+        {
+          "name": "trigger_fear_from",
+          "line": 402
+        },
+        {
+          "name": "is_hit_from_behind",
+          "line": 412
+        },
+        {
+          "name": "_check_slam_collisions",
+          "line": 418
+        },
+        {
+          "name": "_handle_enemy_slam",
+          "line": 435
+        },
+        {
+          "name": "_handle_breakable_slam",
+          "line": 445
+        },
+        {
+          "name": "_handle_wall_slam",
+          "line": 450
+        },
+        {
+          "name": "_take_slam_damage",
+          "line": 453
+        },
+        {
+          "name": "_idle",
+          "line": 461
+        },
+        {
+          "name": "_return_home",
+          "line": 466
+        },
+        {
+          "name": "_update_attack_windup",
+          "line": 478
+        },
+        {
+          "name": "_cancel_windup",
+          "line": 508
+        },
+        {
+          "name": "_try_damage_player",
+          "line": 518
+        },
+        {
+          "name": "_apply_attack_hitback",
+          "line": 541
+        },
+        {
+          "name": "_on_health_changed",
+          "line": 554
+        },
+        {
+          "name": "_on_damaged",
+          "line": 558
+        },
+        {
+          "name": "_on_died",
+          "line": 572
+        },
+        {
+          "name": "_build_accent_material",
+          "line": 607
+        },
+        {
+          "name": "_setup_skeleton_visuals",
+          "line": 612
+        },
+        {
+          "name": "_build_skeleton_texture",
+          "line": 652
+        },
+        {
+          "name": "_load_texture_from_path",
+          "line": 676
+        },
+        {
+          "name": "_find_night_ambience",
+          "line": 689
+        },
+        {
+          "name": "_is_night_active",
+          "line": 695
+        },
+        {
+          "name": "_update_fire_lion_light",
+          "line": 702
+        },
+        {
+          "name": "_build_fire_lion_light_texture",
+          "line": 724
+        },
+        {
+          "name": "_sample_fire_lion_light_color",
+          "line": 737
+        },
+        {
+          "name": "_build_skeleton_corpse_texture",
+          "line": 745
+        },
+        {
+          "name": "_update_skeleton_animation",
+          "line": 759
+        },
+        {
+          "name": "_update_enemy_direction_texture",
+          "line": 777
+        },
+        {
+          "name": "_get_visual_direction_state",
+          "line": 826
+        },
+        {
+          "name": "_get_direction_frames",
+          "line": 852
+        },
+        {
+          "name": "_get_display_size",
+          "line": 859
+        },
+        {
+          "name": "_get_run_sheet_columns",
+          "line": 864
+        },
+        {
+          "name": "_get_enemy1_frames",
+          "line": 871
+        },
+        {
+          "name": "_get_fire_lion_frames",
+          "line": 876
+        },
+        {
+          "name": "_build_enemy1_frames",
+          "line": 881
+        },
+        {
+          "name": "_build_fire_lion_frames",
+          "line": 895
+        },
+        {
+          "name": "_slice_enemy1_row",
+          "line": 909
+        },
+        {
+          "name": "_slice_fire_lion_row",
+          "line": 918
+        },
+        {
+          "name": "_get_zombie_frames",
+          "line": 927
+        },
+        {
+          "name": "_build_zombie_frames",
+          "line": 932
+        },
+        {
+          "name": "_slice_zombie_row",
+          "line": 946
+        },
+        {
+          "name": "_get_enemy_attack_frames",
+          "line": 956
+        },
+        {
+          "name": "_build_enemy_attack_frames",
+          "line": 961
+        },
+        {
+          "name": "_slice_enemy_attack_row",
+          "line": 973
+        },
+        {
+          "name": "_fill_rect",
+          "line": 982
+        },
+        {
+          "name": "_update_death_flight",
+          "line": 988
+        },
+        {
+          "name": "settle_dead_body",
+          "line": 1007
+        },
+        {
+          "name": "_check_corpse_collisions",
+          "line": 1021
+        },
+        {
+          "name": "_update_dead_body_fade",
+          "line": 1052
+        }
+      ],
+      "resource_literals": [
+        "res://assets/xianxia/enemy1.png",
+        "res://assets/xianxia/enemy_attack.png",
+        "res://assets/xianxia/fire_lion_run_aligned.png",
+        "res://assets/xianxia/skeleton_corpse.png",
+        "res://assets/xianxia/skeleton_idle.png",
+        "res://assets/xianxia/zombie.png"
+      ]
+    },
+    {
+      "path": "scripts/interface/BattleChrome.gd",
+      "module": "legacy-interface",
+      "review": "full",
+      "lines": 18,
+      "sha256": "9f1be0951338a5d9ed17588513bc8da779c4b84252deba14f57ad6d4c2bb6ed0",
+      "symbols": [
+        {
+          "name": "_ready",
+          "line": 4
+        },
+        {
+          "name": "_draw",
+          "line": 8
+        }
+      ],
+      "resource_literals": [
+        "res://scripts/interface/JianghuTheme.gd"
+      ]
+    },
+    {
+      "path": "scripts/interface/BattleLayout.gd",
+      "module": "legacy-interface",
+      "review": "full",
+      "lines": 89,
+      "sha256": "33953ae9ebef97a33e9ceb85940465f80e745747ca43cfa912ae29e4e62d7471",
+      "symbols": [
+        {
+          "name": "install",
+          "line": 5
+        },
+        {
+          "name": "_skin_inventory",
+          "line": 71
+        }
+      ],
+      "resource_literals": [
+        "res://assets/xianxia/players_gemini_idle_down.png",
+        "res://scripts/interface/BattleChrome.gd",
+        "res://scripts/interface/JianghuTheme.gd",
+        "res://scripts/interface/SkillSigil.gd"
+      ]
+    },
+    {
+      "path": "scripts/interface/ItemGlyph.gd",
+      "module": "legacy-interface",
+      "review": "full",
+      "lines": 33,
+      "sha256": "e8995c42f74796979a2f8e99c8796b3cef85cbb50d44cddbcc096fed14fa10c4",
+      "symbols": [
+        {
+          "name": "_ready",
+          "line": 5
+        },
+        {
+          "name": "_process",
+          "line": 14
+        },
+        {
+          "name": "_draw",
+          "line": 20
+        }
+      ],
+      "resource_literals": [
+        "res://scripts/interface/JianghuTheme.gd",
+        "res://scripts/player/WeaponRig.gd"
+      ]
+    },
+    {
+      "path": "scripts/interface/JianghuTheme.gd",
+      "module": "legacy-interface",
+      "review": "full",
+      "lines": 46,
+      "sha256": "7e66839c8e57bda2191eab88dbd517ba6c044a8c28a87f3357fc1e84edc0eaa1",
+      "symbols": [
+        {
+          "name": "font",
+          "line": 8
+        },
+        {
+          "name": "panel",
+          "line": 11
+        },
+        {
+          "name": "make",
+          "line": 24
+        },
+        {
+          "name": "label",
+          "line": 40
+        }
+      ],
+      "resource_literals": [
+        "res://assets/fonts/NotoSansSC.ttf",
+        "res://assets/fonts/NotoSerifSC.ttf"
+      ]
+    },
+    {
+      "path": "scripts/interface/ResultScreen.gd",
+      "module": "legacy-interface",
+      "review": "full",
+      "lines": 41,
+      "sha256": "5b24e817ec8e11beb5fb7ea9bb59b12ef7d5b2bde9cf2df89f262c6e9b4bf101",
+      "symbols": [
+        {
+          "name": "_ready",
+          "line": 8
+        }
+      ],
+      "resource_literals": [
+        "res://scenes/interface/TitleScreen.tscn",
+        "res://scripts/interface/JianghuTheme.gd"
+      ]
+    },
+    {
+      "path": "scripts/interface/SkillSigil.gd",
+      "module": "legacy-interface",
+      "review": "full",
+      "lines": 35,
+      "sha256": "d0e7b9b7e14dbaa63b7429f841c4cd22db9c8befc390b55de672813f6fca48b7",
+      "symbols": [
+        {
+          "name": "_ready",
+          "line": 5
+        },
+        {
+          "name": "_draw",
+          "line": 9
+        }
+      ],
+      "resource_literals": []
+    },
+    {
+      "path": "scripts/interface/Soundscape.gd",
+      "module": "shared-audio",
+      "review": "full",
+      "lines": 41,
+      "sha256": "c27bf26f97bea5ab3250ffb169a99a93d10f7f77f52330ed55cabd17ce8363af",
+      "symbols": [
+        {
+          "name": "_ready",
+          "line": 5
+        },
+        {
+          "name": "_stop_music",
+          "line": 16
+        },
+        {
+          "name": "_notification",
+          "line": 21
+        },
+        {
+          "name": "shutdown",
+          "line": 25
+        },
+        {
+          "name": "_stop_audio_tree",
+          "line": 37
+        }
+      ],
+      "resource_literals": []
+    },
+    {
+      "path": "scripts/interface/TitleScreen.gd",
+      "module": "legacy-interface",
+      "review": "full",
+      "lines": 138,
+      "sha256": "efae313a7ea0ada5ceda5641760a36c558a4d1fff5384b0cc2c41d517b2aa407",
+      "symbols": [
+        {
+          "name": "_ready",
+          "line": 9
+        },
+        {
+          "name": "_add_button",
+          "line": 65
+        },
+        {
+          "name": "start_game",
+          "line": 73
+        },
+        {
+          "name": "_modal",
+          "line": 82
+        },
+        {
+          "name": "show_guide",
+          "line": 96
+        },
+        {
+          "name": "show_settings",
+          "line": 102
+        },
+        {
+          "name": "_close_button",
+          "line": 118
+        },
+        {
+          "name": "_unhandled_input",
+          "line": 124
+        },
+        {
+          "name": "_process",
+          "line": 129
+        },
+        {
+          "name": "_draw",
+          "line": 133
+        }
+      ],
+      "resource_literals": [
+        "res://assets/art_v2/title_moonlit.png",
+        "res://scenes/main/Main.tscn",
+        "res://scripts/interface/JianghuTheme.gd"
+      ]
+    },
+    {
+      "path": "scripts/interface/UpgradeChoice.gd",
+      "module": "legacy-interface",
+      "review": "full",
+      "lines": 51,
+      "sha256": "861540c40d2b9c5bf2ba4ac714ed9d2d25c34a1b020b12ca3bd7474d0c0c5341",
+      "symbols": [
+        {
+          "name": "chosen",
+          "line": 2
+        },
+        {
+          "name": "_ready",
+          "line": 7
+        },
+        {
+          "name": "select",
+          "line": 35
+        },
+        {
+          "name": "_unhandled_input",
+          "line": 45
+        }
+      ],
+      "resource_literals": [
+        "res://scripts/interface/JianghuTheme.gd"
+      ]
+    },
+    {
+      "path": "scripts/player/PlayerController.gd",
+      "module": "legacy-actors",
+      "review": "full",
+      "lines": 1161,
+      "sha256": "dcd7a96250349c9e6a92b6f4dbd548bca79798265219add64605487265a06257",
+      "symbols": [
+        {
+          "name": "stamina_changed",
+          "line": 3
+        },
+        {
+          "name": "exhaustion_changed",
+          "line": 4
+        },
+        {
+          "name": "blocked",
+          "line": 5
+        },
+        {
+          "name": "combat_message_requested",
+          "line": 6
+        },
+        {
+          "name": "skill_slots_changed",
+          "line": 7
+        },
+        {
+          "name": "active_skill_slots_changed",
+          "line": 8
+        },
+        {
+          "name": "_ready",
+          "line": 162
+        },
+        {
+          "name": "_physics_process",
+          "line": 185
+        },
+        {
+          "name": "_try_melee_attack",
+          "line": 298
+        },
+        {
+          "name": "_resolve_melee_attack",
+          "line": 313
+        },
+        {
+          "name": "_handle_skill_input",
+          "line": 400
+        },
+        {
+          "name": "_toggle_skill_slot",
+          "line": 409
+        },
+        {
+          "name": "_show_attack_preview",
+          "line": 414
+        },
+        {
+          "name": "_start_sword_swing",
+          "line": 430
+        },
+        {
+          "name": "_update_sword_feedback",
+          "line": 437
+        },
+        {
+          "name": "_setup_xianxia_visuals",
+          "line": 472
+        },
+        {
+          "name": "set_equipped_weapon",
+          "line": 531
+        },
+        {
+          "name": "_refresh_equipped_weapon_visual",
+          "line": 557
+        },
+        {
+          "name": "_get_directional_animation_state",
+          "line": 562
+        },
+        {
+          "name": "_get_five_dir_run_frames",
+          "line": 625
+        },
+        {
+          "name": "_build_five_dir_run_frames",
+          "line": 630
+        },
+        {
+          "name": "_slice_run_sheet_row",
+          "line": 646
+        },
+        {
+          "name": "_get_idle_frames_for_direction",
+          "line": 655
+        },
+        {
+          "name": "_build_idle_frames",
+          "line": 667
+        },
+        {
+          "name": "_slice_idle_sheet_row",
+          "line": 679
+        },
+        {
+          "name": "_get_attack_frames_for_direction",
+          "line": 688
+        },
+        {
+          "name": "_build_attack_frames",
+          "line": 708
+        },
+        {
+          "name": "_slice_attack_sheet_row",
+          "line": 721
+        },
+        {
+          "name": "_load_png_texture",
+          "line": 730
+        },
+        {
+          "name": "_build_player_texture",
+          "line": 741
+        },
+        {
+          "name": "_build_sword_texture",
+          "line": 764
+        },
+        {
+          "name": "_update_xianxia_animation",
+          "line": 779
+        },
+        {
+          "name": "_spawn_afterimage",
+          "line": 835
+        },
+        {
+          "name": "_sync_body_scale",
+          "line": 852
+        },
+        {
+          "name": "_fill_rect",
+          "line": 870
+        },
+        {
+          "name": "_choose_attack_variant",
+          "line": 876
+        },
+        {
+          "name": "_choose_combat_message",
+          "line": 887
+        },
+        {
+          "name": "_get_variant_spark_color",
+          "line": 901
+        },
+        {
+          "name": "_get_variant_spark_end_scale",
+          "line": 914
+        },
+        {
+          "name": "_spawn_hit_spark",
+          "line": 927
+        },
+        {
+          "name": "_spawn_slash_trail",
+          "line": 942
+        },
+        {
+          "name": "_get_effect_host",
+          "line": 952
+        },
+        {
+          "name": "_apply_hit_pause",
+          "line": 960
+        },
+        {
+          "name": "_on_damaged",
+          "line": 967
+        },
+        {
+          "name": "_update_death_animation",
+          "line": 977
+        },
+        {
+          "name": "_on_died",
+          "line": 996
+        },
+        {
+          "name": "apply_incoming_damage",
+          "line": 1010
+        },
+        {
+          "name": "apply_attack_hitback",
+          "line": 1025
+        },
+        {
+          "name": "is_attack_target_active",
+          "line": 1032
+        },
+        {
+          "name": "_is_counter_ready_visual_active",
+          "line": 1035
+        },
+        {
+          "name": "_update_defense",
+          "line": 1038
+        },
+        {
+          "name": "_set_stamina",
+          "line": 1055
+        },
+        {
+          "name": "can_spend_stamina",
+          "line": 1069
+        },
+        {
+          "name": "spend_stamina",
+          "line": 1072
+        },
+        {
+          "name": "get_skill_origin",
+          "line": 1075
+        },
+        {
+          "name": "get_skill_direction",
+          "line": 1078
+        },
+        {
+          "name": "get_skill_slot_names",
+          "line": 1081
+        },
+        {
+          "name": "_ensure_default_transform_skill",
+          "line": 1086
+        },
+        {
+          "name": "_on_skill_slots_changed",
+          "line": 1097
+        },
+        {
+          "name": "_on_skill_cast_failed",
+          "line": 1100
+        },
+        {
+          "name": "_on_skill_cast_started",
+          "line": 1103
+        },
+        {
+          "name": "_on_active_slots_changed",
+          "line": 1106
+        },
+        {
+          "name": "_refresh_body_feedback",
+          "line": 1110
+        },
+        {
+          "name": "_try_dash",
+          "line": 1124
+        },
+        {
+          "name": "handle_enemy_attack",
+          "line": 1143
+        }
+      ],
+      "resource_literals": [
+        "res://assets/art_v2/player_attack_aligned.png",
+        "res://assets/xianxia/players/transparent_cropped_original_size/down_run.png",
+        "res://assets/xianxia/players/transparent_cropped_original_size/left_run.png",
+        "res://assets/xianxia/players/transparent_cropped_original_size/right_run.png",
+        "res://assets/xianxia/players/transparent_cropped_original_size/up_run.png",
+        "res://assets/xianxia/players_attack.png",
+        "res://assets/xianxia/players_gemini_aligned_5dir_run.png",
+        "res://assets/xianxia/players_gemini_aligned_idle.png",
+        "res://assets/xianxia/players_gemini_idle_down.png",
+        "res://assets/xianxia/players_gemini_idle_left.png",
+        "res://assets/xianxia/players_gemini_idle_up.png",
+        "res://assets/xianxia/sword.png",
+        "res://resources/skills/%s.tres",
+        "res://resources/skills/ProtectiveDivineLight.tres",
+        "res://resources/skills/Transform.tres",
+        "res://scenes/effects/HitSpark.tscn",
+        "res://scenes/effects/SlashTrail.tscn",
+        "res://scripts/player/WeaponRig.gd"
+      ]
+    },
+    {
+      "path": "scripts/player/WeaponRig.gd",
+      "module": "legacy-actors",
+      "review": "full",
+      "lines": 33,
+      "sha256": "eb0308f72d911cdd1060202dad070dd54e750b9a0f5aeb4768c0f49fb4a0441b",
+      "symbols": [
+        {
+          "name": "_process",
+          "line": 5
+        },
+        {
+          "name": "_draw",
+          "line": 8
+        }
+      ],
+      "resource_literals": []
+    },
+    {
+      "path": "scripts/polish/GameFeel.gd",
+      "module": "legacy-interface",
+      "review": "full",
+      "lines": 267,
+      "sha256": "17525cb226d63add6e20f41cce364966f71f3790392d2e210e7710e94bbdf23f",
+      "symbols": [
+        {
+          "name": "_ready",
+          "line": 27
+        },
+        {
+          "name": "_style_hud",
+          "line": 83
+        },
+        {
+          "name": "_panel_style",
+          "line": 86
+        },
+        {
+          "name": "_process",
+          "line": 97
+        },
+        {
+          "name": "_observe_enemies",
+          "line": 124
+        },
+        {
+          "name": "_enemy_defeated",
+          "line": 138
+        },
+        {
+          "name": "_show_upgrade",
+          "line": 163
+        },
+        {
+          "name": "_apply_upgrade",
+          "line": 171
+        },
+        {
+          "name": "_begin_boss",
+          "line": 181
+        },
+        {
+          "name": "_damage_number",
+          "line": 202
+        },
+        {
+          "name": "impact",
+          "line": 219
+        },
+        {
+          "name": "_draw",
+          "line": 241
+        },
+        {
+          "name": "_show_result",
+          "line": 250
+        },
+        {
+          "name": "_on_player_defeated",
+          "line": 266
+        }
+      ],
+      "resource_literals": [
+        "res://scenes/boss/MountainGuardian.tscn",
+        "res://scripts/interface/BattleLayout.gd",
+        "res://scripts/interface/JianghuTheme.gd",
+        "res://scripts/interface/ResultScreen.gd",
+        "res://scripts/interface/UpgradeChoice.gd",
+        "res://scripts/polish/JourneyMap.gd",
+        "res://scripts/polish/PauseMenu.gd",
+        "res://scripts/polish/VillageLantern.gd"
+      ]
+    },
+    {
+      "path": "scripts/polish/JourneyMap.gd",
+      "module": "legacy-interface",
+      "review": "full",
+      "lines": 30,
+      "sha256": "98b4cbd76d4af1199da21e074f98a3445323f0c1a22a00c72e72f0ba8cd98124",
+      "symbols": [
+        {
+          "name": "_process",
+          "line": 3
+        },
+        {
+          "name": "_draw",
+          "line": 6
+        }
+      ],
+      "resource_literals": []
+    },
+    {
+      "path": "scripts/polish/PauseMenu.gd",
+      "module": "legacy-interface",
+      "review": "full",
+      "lines": 65,
+      "sha256": "a6730a48baa8ca0f637d9ed6d1aa5fceb9762791931734875f073cdbe264686b",
+      "symbols": [
+        {
+          "name": "_ready",
+          "line": 7
+        },
+        {
+          "name": "_process",
+          "line": 62
+        }
+      ],
+      "resource_literals": [
+        "res://scenes/interface/TitleScreen.tscn",
+        "res://scripts/interface/JianghuTheme.gd"
+      ]
+    },
+    {
+      "path": "scripts/polish/VillageLantern.gd",
+      "module": "legacy-interface",
+      "review": "full",
+      "lines": 37,
+      "sha256": "b8d790348f06145d155e2865ddb7226ab5faf8df87e821d041f6527dae3e69b3",
+      "symbols": [
+        {
+          "name": "_ready",
+          "line": 5
+        },
+        {
+          "name": "_process",
+          "line": 23
+        },
+        {
+          "name": "_draw",
+          "line": 30
+        }
+      ],
+      "resource_literals": []
+    },
+    {
+      "path": "scripts/rebirth/AbilitySigil.gd",
+      "module": "stillwater-presentation",
+      "review": "full",
+      "lines": 56,
+      "sha256": "e3c299e71a8d4150f60c513bea1b330bc54a1737b4fe1d41d8deaf4a587c8b11",
+      "symbols": [
+        {
+          "name": "_ready",
+          "line": 10
+        },
+        {
+          "name": "_draw",
+          "line": 14
+        }
+      ],
+      "resource_literals": []
+    },
+    {
+      "path": "scripts/rebirth/CombatFeedback.gd",
+      "module": "stillwater-presentation",
+      "review": "full",
+      "lines": 86,
+      "sha256": "72ef41f03486d0a2cce372d62a9b9e5e3a738f26b0996133a9618f7529682e7c",
+      "symbols": [
+        {
+          "name": "_ready",
+          "line": 13
+        },
+        {
+          "name": "receive_hit",
+          "line": 28
+        },
+        {
+          "name": "receive_defense",
+          "line": 33
+        },
+        {
+          "name": "_process",
+          "line": 38
+        },
+        {
+          "name": "_draw",
+          "line": 51
+        },
+        {
+          "name": "draw_defense",
+          "line": 68
+        }
+      ],
+      "resource_literals": [
+        "res://assets/fonts/StillwaterSans.tres"
+      ]
+    },
+    {
+      "path": "scripts/rebirth/CombatImpact.gd",
+      "module": "stillwater-presentation",
+      "review": "full",
+      "lines": 52,
+      "sha256": "aeed21ace85efeeec24b394a44aabc121a60d699324e7947347b89975ec416dd",
+      "symbols": [
+        {
+          "name": "_ready",
+          "line": 13
+        },
+        {
+          "name": "_process",
+          "line": 45
+        }
+      ],
+      "resource_literals": [
+        "res://scripts/rebirth/Form.gd"
+      ]
+    },
+    {
+      "path": "scripts/rebirth/CombatPuppet.gd",
+      "module": "duelist-combat",
+      "review": "full",
+      "lines": 258,
+      "sha256": "6296a38b60870dd70ef6dedb027c4cf4c1204622522c2961063105632f8cbbb6",
+      "symbols": [
+        {
+          "name": "_ready",
+          "line": 20
+        },
+        {
+          "name": "collect_meshes",
+          "line": 55
+        },
+        {
+          "name": "update_pose",
+          "line": 60
+        },
+        {
+          "name": "retone",
+          "line": 197
+        },
+        {
+          "name": "build_scarf",
+          "line": 229
+        },
+        {
+          "name": "update_scarf",
+          "line": 240
+        },
+        {
+          "name": "scarf_point",
+          "line": 255
+        }
+      ],
+      "resource_literals": [
+        "res://assets/characters/kaykit/Knight.glb",
+        "res://assets/characters/kaykit/Knight_knight_texture.png",
+        "res://assets/characters/kaykit/Mage.glb",
+        "res://assets/characters/kaykit/Mage_mage_texture.png",
+        "res://assets/characters/kaykit/Rogue_Hooded.glb",
+        "res://assets/characters/kaykit/Rogue_Hooded_rogue_texture.png",
+        "res://scripts/rebirth/Form.gd"
+      ]
+    },
+    {
+      "path": "scripts/rebirth/CombatReadout.gd",
+      "module": "stillwater-presentation",
+      "review": "full",
+      "lines": 60,
+      "sha256": "df5b4a6bf3e74d4dfd775b843cf309bc1399f2b2fe8805846a1284797d757296",
+      "symbols": [
+        {
+          "name": "_ready",
+          "line": 11
+        },
+        {
+          "name": "_process",
+          "line": 14
+        },
+        {
+          "name": "text_shadow",
+          "line": 27
+        },
+        {
+          "name": "_draw",
+          "line": 31
+        }
+      ],
+      "resource_literals": [
+        "res://assets/fonts/StillwaterSans.tres"
+      ]
+    },
+    {
+      "path": "scripts/rebirth/CourtyardAtmosphere.gd",
+      "module": "stillwater-presentation",
+      "review": "full",
+      "lines": 115,
+      "sha256": "0d66ac4b360caf81f5ae3aaa9ca30b257090a3c129948ef5a9223666614f2400",
+      "symbols": [
+        {
+          "name": "F",
+          "line": 4
+        },
+        {
+          "name": "BLOOM",
+          "line": 5
+        },
+        {
+          "name": "INSCRIPTION",
+          "line": 6
+        },
+        {
+          "name": "world",
+          "line": 8
+        },
+        {
+          "name": "seal_visuals",
+          "line": 9
+        },
+        {
+          "name": "court_material",
+          "line": 10
+        },
+        {
+          "name": "court_visible",
+          "line": 11
+        },
+        {
+          "name": "age",
+          "line": 12
+        },
+        {
+          "name": "state_check",
+          "line": 13
+        },
+        {
+          "name": "_ready",
+          "line": 15
+        },
+        {
+          "name": "_process",
+          "line": 26
+        },
+        {
+          "name": "inscription_material",
+          "line": 42
+        },
+        {
+          "name": "build_seal_armatures",
+          "line": 48
+        },
+        {
+          "name": "update_ritual_states",
+          "line": 79
+        },
+        {
+          "name": "bloom",
+          "line": 109
+        }
+      ],
+      "resource_literals": [
+        "res://scripts/rebirth/Form.gd",
+        "res://scripts/rebirth/SealBloom.gd",
+        "res://scripts/rebirth/shaders/SealInscription.gdshader"
+      ]
+    },
+    {
+      "path": "scripts/rebirth/CourtyardDetail.gd",
+      "module": "stillwater-presentation",
+      "review": "full",
+      "lines": 6,
+      "sha256": "8c52a73c12eeaf7a20cd29090b087d5bc97e4e41c53fb24bf57979aaa38b1885",
+      "symbols": [
+        {
+          "name": "attach_atmosphere",
+          "line": 3
+        }
+      ],
+      "resource_literals": [
+        "res://scripts/rebirth/CourtyardAtmosphere.gd"
+      ]
+    },
+    {
+      "path": "scripts/rebirth/Duelist.gd",
+      "module": "duelist-combat",
+      "review": "full",
+      "lines": 619,
+      "sha256": "700d9e1f694e4b70a5cde2dbc85a84f636b2ff422eff372c7ee8dceaade4e34e",
+      "symbols": [
+        {
+          "name": "_ready",
+          "line": 70
+        },
+        {
+          "name": "build_body",
+          "line": 101
+        },
+        {
+          "name": "make_weapon",
+          "line": 125
+        },
+        {
+          "name": "_physics_process",
+          "line": 160
+        },
+        {
+          "name": "control",
+          "line": 259
+        },
+        {
+          "name": "think",
+          "line": 285
+        },
+        {
+          "name": "start_attack",
+          "line": 328
+        },
+        {
+          "name": "dash",
+          "line": 350
+        },
+        {
+          "name": "hurt",
+          "line": 370
+        },
+        {
+          "name": "animate",
+          "line": 454
+        },
+        {
+          "name": "draw_trail",
+          "line": 487
+        },
+        {
+          "name": "_exit_tree",
+          "line": 511
+        },
+        {
+          "name": "launch",
+          "line": 514
+        },
+        {
+          "name": "apply_posture",
+          "line": 532
+        },
+        {
+          "name": "attack_profile",
+          "line": 553
+        },
+        {
+          "name": "melee_reach",
+          "line": 563
+        },
+        {
+          "name": "melee_cone_dot",
+          "line": 567
+        },
+        {
+          "name": "contact_fraction",
+          "line": 570
+        },
+        {
+          "name": "recovery_scale",
+          "line": 573
+        },
+        {
+          "name": "capture_perfect_evades",
+          "line": 579
+        },
+        {
+          "name": "resolve_perfect_evades",
+          "line": 593
+        },
+        {
+          "name": "reward_perfect_evade",
+          "line": 605
+        },
+        {
+          "name": "defense_feedback",
+          "line": 617
+        }
+      ],
+      "resource_literals": [
+        "res://scripts/rebirth/CombatPuppet.gd",
+        "res://scripts/rebirth/Form.gd"
+      ]
+    },
+    {
+      "path": "scripts/rebirth/Form.gd",
+      "module": "stillwater-presentation",
+      "review": "full",
+      "lines": 104,
+      "sha256": "5060e77b12238afd225058bc20474ca6bb6885e47257db8c8468f85369b58775",
+      "symbols": [
+        {
+          "name": "WEATHERED_SHADER",
+          "line": 3
+        },
+        {
+          "name": "WATER_SHADER",
+          "line": 4
+        },
+        {
+          "name": "FOLIAGE_SHADER",
+          "line": 5
+        },
+        {
+          "name": "material",
+          "line": 7
+        },
+        {
+          "name": "box",
+          "line": 20
+        },
+        {
+          "name": "cylinder",
+          "line": 34
+        },
+        {
+          "name": "sphere",
+          "line": 42
+        },
+        {
+          "name": "instance",
+          "line": 52
+        },
+        {
+          "name": "beam",
+          "line": 60
+        },
+        {
+          "name": "ring",
+          "line": 67
+        },
+        {
+          "name": "weathered",
+          "line": 75
+        },
+        {
+          "name": "water",
+          "line": 82
+        },
+        {
+          "name": "foliage",
+          "line": 87
+        },
+        {
+          "name": "crystal_mesh",
+          "line": 94
+        }
+      ],
+      "resource_literals": [
+        "res://scripts/rebirth/shaders/Foliage.gdshader",
+        "res://scripts/rebirth/shaders/Lake.gdshader",
+        "res://scripts/rebirth/shaders/Weathered.gdshader"
+      ]
+    },
+    {
+      "path": "scripts/rebirth/PressureWave.gd",
+      "module": "stillwater-presentation",
+      "review": "full",
+      "lines": 32,
+      "sha256": "33cc525ce4b962e3afdb9719a956d27170168cdf123f8136eee9b28d70c92f53",
+      "symbols": [
+        {
+          "name": "_ready",
+          "line": 7
+        },
+        {
+          "name": "_process",
+          "line": 24
+        }
+      ],
+      "resource_literals": [
+        "res://scripts/rebirth/Form.gd"
+      ]
+    },
+    {
+      "path": "scripts/rebirth/RainEcho.gd",
+      "module": "stillwater-presentation",
+      "review": "full",
+      "lines": 35,
+      "sha256": "47fb25430f5b4930d842d651cc910aa4cead244f4515e18d23baafd9a3c265ff",
+      "symbols": [
+        {
+          "name": "_ready",
+          "line": 7
+        },
+        {
+          "name": "style",
+          "line": 24
+        },
+        {
+          "name": "_process",
+          "line": 31
+        }
+      ],
+      "resource_literals": [
+        "res://assets/characters/kaykit/Rogue_Hooded.glb",
+        "res://scripts/rebirth/Form.gd"
+      ]
+    },
+    {
+      "path": "scripts/rebirth/RunDirector.gd",
+      "module": "stillwater-run",
+      "review": "full",
+      "lines": 136,
+      "sha256": "53b52b8343a4425f4ce3acd36240f766548d9d8afd2e24acff4961223f8fc6bc",
+      "symbols": [
+        {
+          "name": "update",
+          "line": 24
+        },
+        {
+          "name": "record",
+          "line": 43
+        },
+        {
+          "name": "gain",
+          "line": 92
+        },
+        {
+          "name": "caption",
+          "line": 101
+        },
+        {
+          "name": "hint",
+          "line": 106
+        },
+        {
+          "name": "damage_multiplier",
+          "line": 111
+        },
+        {
+          "name": "stamina_multiplier",
+          "line": 114
+        },
+        {
+          "name": "report",
+          "line": 117
+        },
+        {
+          "name": "snapshot",
+          "line": 127
+        },
+        {
+          "name": "restore",
+          "line": 130
+        }
+      ],
+      "resource_literals": []
+    },
+    {
+      "path": "scripts/rebirth/SealBloom.gd",
+      "module": "stillwater-presentation",
+      "review": "full",
+      "lines": 60,
+      "sha256": "f0c5aac8f3b9600ac8307ae584ac6bc02d3a0b1f50f8abd60a1a80da6b1ab7c5",
+      "symbols": [
+        {
+          "name": "_ready",
+          "line": 14
+        },
+        {
+          "name": "_process",
+          "line": 39
+        },
+        {
+          "name": "update_shapes",
+          "line": 46
+        }
+      ],
+      "resource_literals": [
+        "res://scripts/rebirth/Form.gd"
+      ]
+    },
+    {
+      "path": "scripts/rebirth/SealHazard.gd",
+      "module": "stillwater-presentation",
+      "review": "full",
+      "lines": 20,
+      "sha256": "847ee0b9dfc6e37436d71e80720c5403b2b2e7aa65342c7bfa4e629be32bb6ea",
+      "symbols": [
+        {
+          "name": "_ready",
+          "line": 7
+        },
+        {
+          "name": "_physics_process",
+          "line": 10
+        }
+      ],
+      "resource_literals": [
+        "res://scripts/rebirth/Form.gd"
+      ]
+    },
+    {
+      "path": "scripts/rebirth/SpiritBolt.gd",
+      "module": "stillwater-presentation",
+      "review": "full",
+      "lines": 52,
+      "sha256": "b85745675465f39e946c26c29f10b8caab12d7bcc8e61ce3ace568707f808de4",
+      "symbols": [
+        {
+          "name": "_ready",
+          "line": 8
+        },
+        {
+          "name": "_physics_process",
+          "line": 13
+        },
+        {
+          "name": "reflect",
+          "line": 39
+        }
+      ],
+      "resource_literals": [
+        "res://scripts/rebirth/Form.gd"
+      ]
+    },
+    {
+      "path": "scripts/rebirth/StillnessBurst.gd",
+      "module": "stillwater-presentation",
+      "review": "full",
+      "lines": 74,
+      "sha256": "bddd9ce17d4c030d11b62e02d561370e165e51e60f72126ec996ae0fec81e5a3",
+      "symbols": [
+        {
+          "name": "_ready",
+          "line": 15
+        },
+        {
+          "name": "_physics_process",
+          "line": 39
+        }
+      ],
+      "resource_literals": [
+        "res://scripts/rebirth/Form.gd"
+      ]
+    },
+    {
+      "path": "scripts/rebirth/Stillwater.gd",
+      "module": "stillwater-run",
+      "review": "full",
+      "lines": 735,
+      "sha256": "6ce491cee68cbc783fdf6231c6139df3f86f294f732b16adcbfbcf2edfcba289",
+      "symbols": [
+        {
+          "name": "F",
+          "line": 2
+        },
+        {
+          "name": "ACTOR",
+          "line": 3
+        },
+        {
+          "name": "INTERFACE",
+          "line": 4
+        },
+        {
+          "name": "MAP_RNG_STATE",
+          "line": 6
+        },
+        {
+          "name": "player",
+          "line": 7
+        },
+        {
+          "name": "camera",
+          "line": 8
+        },
+        {
+          "name": "ui",
+          "line": 9
+        },
+        {
+          "name": "mode",
+          "line": 10
+        },
+        {
+          "name": "enemies",
+          "line": 11
+        },
+        {
+          "name": "seals",
+          "line": 12
+        },
+        {
+          "name": "seal_done",
+          "line": 13
+        },
+        {
+          "name": "current_seal",
+          "line": 14
+        },
+        {
+          "name": "encounter",
+          "line": 15
+        },
+        {
+          "name": "round_index",
+          "line": 16
+        },
+        {
+          "name": "spawn_queue",
+          "line": 17
+        },
+        {
+          "name": "spawn_timer",
+          "line": 18
+        },
+        {
+          "name": "boss_node",
+          "line": 19
+        },
+        {
+          "name": "elapsed",
+          "line": 20
+        },
+        {
+          "name": "run_time",
+          "line": 21
+        },
+        {
+          "name": "kills",
+          "line": 22
+        },
+        {
+          "name": "skill_cooldowns",
+          "line": 23
+        },
+        {
+          "name": "shake",
+          "line": 24
+        },
+        {
+          "name": "shake_enabled",
+          "line": 25
+        },
+        {
+          "name": "rng",
+          "line": 26
+        },
+        {
+          "name": "gold",
+          "line": 27
+        },
+        {
+          "name": "audio",
+          "line": 28
+        },
+        {
+          "name": "fireflies",
+          "line": 29
+        },
+        {
+          "name": "intro_time",
+          "line": 30
+        },
+        {
+          "name": "heal_count",
+          "line": 31
+        },
+        {
+          "name": "last_mouse",
+          "line": 32
+        },
+        {
+          "name": "camera_target",
+          "line": 33
+        },
+        {
+          "name": "activated",
+          "line": 34
+        },
+        {
+          "name": "best",
+          "line": 35
+        },
+        {
+          "name": "persist_progress",
+          "line": 36
+        },
+        {
+          "name": "hazard_timer",
+          "line": 37
+        },
+        {
+          "name": "echo",
+          "line": 38
+        },
+        {
+          "name": "combat_voices",
+          "line": 39
+        },
+        {
+          "name": "sound_bank",
+          "line": 40
+        },
+        {
+          "name": "voice_index",
+          "line": 41
+        },
+        {
+          "name": "sound_clock",
+          "line": 42
+        },
+        {
+          "name": "mouse_aim_time",
+          "line": 43
+        },
+        {
+          "name": "director",
+          "line": 44
+        },
+        {
+          "name": "difficulty",
+          "line": 45
+        },
+        {
+          "name": "boss_phase",
+          "line": 46
+        },
+        {
+          "name": "available_upgrades",
+          "line": 47
+        },
+        {
+          "name": "checkpoint",
+          "line": 48
+        },
+        {
+          "name": "camera_impulse",
+          "line": 49
+        },
+        {
+          "name": "spawn_index",
+          "line": 50
+        },
+        {
+          "name": "ambient_environment",
+          "line": 51
+        },
+        {
+          "name": "key_light",
+          "line": 52
+        },
+        {
+          "name": "vignette_strength",
+          "line": 53
+        },
+        {
+          "name": "_ready",
+          "line": 55
+        },
+        {
+          "name": "setup_map",
+          "line": 94
+        },
+        {
+          "name": "_process",
+          "line": 111
+        },
+        {
+          "name": "_unhandled_input",
+          "line": 149
+        },
+        {
+          "name": "start_run",
+          "line": 179
+        },
+        {
+          "name": "resume",
+          "line": 189
+        },
+        {
+          "name": "aim_point",
+          "line": 194
+        },
+        {
+          "name": "nearest_seal",
+          "line": 201
+        },
+        {
+          "name": "interact",
+          "line": 206
+        },
+        {
+          "name": "spawn_guard",
+          "line": 223
+        },
+        {
+          "name": "living_enemies",
+          "line": 258
+        },
+        {
+          "name": "complete_seal",
+          "line": 264
+        },
+        {
+          "name": "prepare_upgrades",
+          "line": 283
+        },
+        {
+          "name": "upgrade",
+          "line": 296
+        },
+        {
+          "name": "begin_boss",
+          "line": 316
+        },
+        {
+          "name": "enter_boss_phase_two",
+          "line": 332
+        },
+        {
+          "name": "melee",
+          "line": 346
+        },
+        {
+          "name": "cast",
+          "line": 392
+        },
+        {
+          "name": "heal",
+          "line": 462
+        },
+        {
+          "name": "fallen",
+          "line": 470
+        },
+        {
+          "name": "notify",
+          "line": 486
+        },
+        {
+          "name": "impact",
+          "line": 489
+        },
+        {
+          "name": "combat_sound",
+          "line": 492
+        },
+        {
+          "name": "burst",
+          "line": 503
+        },
+        {
+          "name": "flash",
+          "line": 513
+        },
+        {
+          "name": "save_settings",
+          "line": 520
+        },
+        {
+          "name": "configure_gamepad",
+          "line": 529
+        },
+        {
+          "name": "boss_pulse",
+          "line": 543
+        },
+        {
+          "name": "prepare_shutdown",
+          "line": 552
+        },
+        {
+          "name": "leave_echo",
+          "line": 555
+        },
+        {
+          "name": "crash",
+          "line": 564
+        },
+        {
+          "name": "executable_target",
+          "line": 579
+        },
+        {
+          "name": "try_execute",
+          "line": 584
+        },
+        {
+          "name": "combat_event",
+          "line": 609
+        },
+        {
+          "name": "incoming_damage",
+          "line": 612
+        },
+        {
+          "name": "run_report",
+          "line": 617
+        },
+        {
+          "name": "set_difficulty",
+          "line": 620
+        },
+        {
+          "name": "activate_surge",
+          "line": 624
+        },
+        {
+          "name": "update_camera",
+          "line": 646
+        },
+        {
+          "name": "ritual_pulse",
+          "line": 681
+        },
+        {
+          "name": "capture_checkpoint",
+          "line": 690
+        },
+        {
+          "name": "retry_from_checkpoint",
+          "line": 693
+        },
+        {
+          "name": "_retry_checkpoint",
+          "line": 697
+        },
+        {
+          "name": "restore_checkpoint",
+          "line": 711
+        }
+      ],
+      "resource_literals": [
+        "res://assets/audio/combat/%s.wav",
+        "res://scenes/rebirth/Stillwater.tscn",
+        "res://scripts/rebirth/CombatImpact.gd",
+        "res://scripts/rebirth/CourtyardDetail.gd",
+        "res://scripts/rebirth/Duelist.gd",
+        "res://scripts/rebirth/Form.gd",
+        "res://scripts/rebirth/PressureWave.gd",
+        "res://scripts/rebirth/RainEcho.gd",
+        "res://scripts/rebirth/RunDirector.gd",
+        "res://scripts/rebirth/SealHazard.gd",
+        "res://scripts/rebirth/SpiritBolt.gd",
+        "res://scripts/rebirth/StillnessBurst.gd",
+        "res://scripts/rebirth/StillwaterUI.gd",
+        "res://scripts/rebirth/SwordWave.gd"
+      ]
+    },
+    {
+      "path": "scripts/rebirth/StillwaterUI.gd",
+      "module": "stillwater-presentation",
+      "review": "full",
+      "lines": 592,
+      "sha256": "a6de5c9750b92e205c4ff45d1de56a1f94f80d93b5c019e9350d6af9ad98dbec",
+      "symbols": [
+        {
+          "name": "_ready",
+          "line": 62
+        },
+        {
+          "name": "label",
+          "line": 94
+        },
+        {
+          "name": "centered",
+          "line": 105
+        },
+        {
+          "name": "button",
+          "line": 111
+        },
+        {
+          "name": "line",
+          "line": 123
+        },
+        {
+          "name": "panel",
+          "line": 132
+        },
+        {
+          "name": "bar",
+          "line": 146
+        },
+        {
+          "name": "build_hud",
+          "line": 162
+        },
+        {
+          "name": "new_modal",
+          "line": 250
+        },
+        {
+          "name": "clear_modal",
+          "line": 262
+        },
+        {
+          "name": "shade",
+          "line": 270
+        },
+        {
+          "name": "frame",
+          "line": 273
+        },
+        {
+          "name": "show_title",
+          "line": 279
+        },
+        {
+          "name": "guide_column",
+          "line": 315
+        },
+        {
+          "name": "show_guide",
+          "line": 327
+        },
+        {
+          "name": "_return_from_guide",
+          "line": 350
+        },
+        {
+          "name": "show_pause",
+          "line": 354
+        },
+        {
+          "name": "show_upgrade",
+          "line": 378
+        },
+        {
+          "name": "show_result",
+          "line": 412
+        },
+        {
+          "name": "notify",
+          "line": 444
+        },
+        {
+          "name": "_input",
+          "line": 450
+        },
+        {
+          "name": "_process",
+          "line": 464
+        },
+        {
+          "name": "_update_objective",
+          "line": 507
+        },
+        {
+          "name": "_update_abilities",
+          "line": 540
+        },
+        {
+          "name": "_update_lesson",
+          "line": 579
+        },
+        {
+          "name": "_focus_button",
+          "line": 591
+        }
+      ],
+      "resource_literals": [
+        "res://assets/fonts/StillwaterSans.tres",
+        "res://assets/fonts/StillwaterSerif.tres",
+        "res://scripts/rebirth/AbilitySigil.gd",
+        "res://scripts/rebirth/CombatFeedback.gd",
+        "res://scripts/rebirth/CombatReadout.gd"
+      ]
+    },
+    {
+      "path": "scripts/rebirth/SwordWave.gd",
+      "module": "stillwater-presentation",
+      "review": "full",
+      "lines": 26,
+      "sha256": "3b2853f1789e85c50bc4c63c34d7bf071ecf02328e4ec6cb242717ac09e744e0",
+      "symbols": [
+        {
+          "name": "_ready",
+          "line": 7
+        },
+        {
+          "name": "_physics_process",
+          "line": 13
+        }
+      ],
+      "resource_literals": [
+        "res://scripts/rebirth/Form.gd"
+      ]
+    },
+    {
+      "path": "scripts/rebirth/shaders/FallingLeaves.gdshader",
+      "module": "stillwater-presentation",
+      "review": "full",
+      "lines": 18,
+      "sha256": "7f65b46ffcab7a3d43d2105501af2c3a16cea4ca2cf499ac80e6485cb562ccf1",
+      "symbols": [],
+      "resource_literals": []
+    },
+    {
+      "path": "scripts/rebirth/shaders/Foliage.gdshader",
+      "module": "stillwater-presentation",
+      "review": "full",
+      "lines": 19,
+      "sha256": "a1c338faf0cdc17fee27f5b93068c8f9fe523aadc896538c506444e3a4618799",
+      "symbols": [],
+      "resource_literals": []
+    },
+    {
+      "path": "scripts/rebirth/shaders/Grass.gdshader",
+      "module": "stillwater-presentation",
+      "review": "full",
+      "lines": 15,
+      "sha256": "6ead3d1652101b172e22d89caab6eb4e52d94157192eaf876e37d5e2bb9fd917",
+      "symbols": [],
+      "resource_literals": []
+    },
+    {
+      "path": "scripts/rebirth/shaders/Lake.gdshader",
+      "module": "stillwater-presentation",
+      "review": "full",
+      "lines": 24,
+      "sha256": "25db80e67f03c0b68bbb8b25930f1e9ccd078e0fd0d52a49f65a91ff1add007b",
+      "symbols": [],
+      "resource_literals": []
+    },
+    {
+      "path": "scripts/rebirth/shaders/LakeMist.gdshader",
+      "module": "stillwater-presentation",
+      "review": "full",
+      "lines": 13,
+      "sha256": "8b603a22737f0c77b1315803e624387e96294151ee65aa633bb696cdc82fd5c5",
+      "symbols": [],
+      "resource_literals": []
+    },
+    {
+      "path": "scripts/rebirth/shaders/RainRipples.gdshader",
+      "module": "stillwater-presentation",
+      "review": "full",
+      "lines": 20,
+      "sha256": "a2215ee564065215e0e30634947886b2f679f6dae72f55d3c03ed8421395bf3f",
+      "symbols": [],
+      "resource_literals": []
+    },
+    {
+      "path": "scripts/rebirth/shaders/SealInscription.gdshader",
+      "module": "stillwater-presentation",
+      "review": "full",
+      "lines": 27,
+      "sha256": "ec42c54ee88f3e4766c10b5c63a4d40913e97bce7751932512bf2efa69247c59",
+      "symbols": [],
+      "resource_literals": []
+    },
+    {
+      "path": "scripts/rebirth/shaders/Weathered.gdshader",
+      "module": "stillwater-presentation",
+      "review": "full",
+      "lines": 40,
+      "sha256": "a28d1246c6ae1473c6b57061df0b7a0494bc152764cf9f0e0d74d49cb073f44d",
+      "symbols": [],
+      "resource_literals": []
+    },
+    {
+      "path": "scripts/skills/MartialSkillEffect.gd",
+      "module": "legacy-skills",
+      "review": "full",
+      "lines": 104,
+      "sha256": "9bad372195c3366565efce922fd21c299e74b1d014f95a1df68c10ae64757350",
+      "symbols": [
+        {
+          "name": "_ready",
+          "line": 13
+        },
+        {
+          "name": "activate",
+          "line": 19
+        },
+        {
+          "name": "_physics_process",
+          "line": 42
+        },
+        {
+          "name": "_hit_targets",
+          "line": 60
+        },
+        {
+          "name": "_draw",
+          "line": 75
+        }
+      ],
+      "resource_literals": []
+    },
+    {
+      "path": "scripts/skills/ProtectiveDivineLightEffect.gd",
+      "module": "legacy-skills",
+      "review": "full",
+      "lines": 116,
+      "sha256": "4c3c4bcd93d7dd84a2be54cde1f3df06a03a57c631559d7aba603689b4feb2b3",
+      "symbols": [
+        {
+          "name": "_ready",
+          "line": 16
+        },
+        {
+          "name": "activate",
+          "line": 29
+        },
+        {
+          "name": "refresh",
+          "line": 48
+        },
+        {
+          "name": "_physics_process",
+          "line": 51
+        },
+        {
+          "name": "_orbit_position",
+          "line": 73
+        },
+        {
+          "name": "_scan_and_hit",
+          "line": 77
+        },
+        {
+          "name": "_try_contact",
+          "line": 92
+        },
+        {
+          "name": "_on_tree_exiting",
+          "line": 112
+        }
+      ],
+      "resource_literals": [
+        "res://scripts/player/WeaponRig.gd"
+      ]
+    },
+    {
+      "path": "scripts/skills/SkillCaster.gd",
+      "module": "legacy-skills",
+      "review": "full",
+      "lines": 190,
+      "sha256": "a1dcfe21e03cbbd09763146de35fc1f0c37e6d499c6eba5b164f77e8d990ec1d",
+      "symbols": [
+        {
+          "name": "SkillCaster",
+          "line": 1
+        },
+        {
+          "name": "skill_slots_changed",
+          "line": 4
+        },
+        {
+          "name": "skill_cast_failed",
+          "line": 5
+        },
+        {
+          "name": "skill_cast_started",
+          "line": 6
+        },
+        {
+          "name": "active_slots_changed",
+          "line": 7
+        },
+        {
+          "name": "_ready",
+          "line": 18
+        },
+        {
+          "name": "_process",
+          "line": 22
+        },
+        {
+          "name": "toggle_slot",
+          "line": 37
+        },
+        {
+          "name": "is_slot_active",
+          "line": 47
+        },
+        {
+          "name": "activate_all_filled_slots",
+          "line": 53
+        },
+        {
+          "name": "get_active_slots",
+          "line": 60
+        },
+        {
+          "name": "get_slot_names",
+          "line": 67
+        },
+        {
+          "name": "try_cast_slot",
+          "line": 78
+        },
+        {
+          "name": "_ensure_slot_data",
+          "line": 116
+        },
+        {
+          "name": "_can_pay_cost",
+          "line": 134
+        },
+        {
+          "name": "_pay_cost",
+          "line": 142
+        },
+        {
+          "name": "_get_owner_origin",
+          "line": 149
+        },
+        {
+          "name": "_get_owner_direction",
+          "line": 157
+        },
+        {
+          "name": "_make_context",
+          "line": 163
+        },
+        {
+          "name": "_get_owner_transform_zone_range",
+          "line": 176
+        },
+        {
+          "name": "_get_owner_transform_zone_size",
+          "line": 182
+        },
+        {
+          "name": "_fail",
+          "line": 188
+        }
+      ],
+      "resource_literals": []
+    },
+    {
+      "path": "scripts/skills/SkillDefinition.gd",
+      "module": "legacy-skills",
+      "review": "full",
+      "lines": 16,
+      "sha256": "5bf043d73c17e9a23ad50fb84a7345f0808c84dd0de04f450ffe4d0f97afb666",
+      "symbols": [
+        {
+          "name": "SkillDefinition",
+          "line": 1
+        },
+        {
+          "name": "TargetingMode",
+          "line": 4
+        }
+      ],
+      "resource_literals": []
+    },
+    {
+      "path": "scripts/skills/SkillEffect.gd",
+      "module": "legacy-skills",
+      "review": "full",
+      "lines": 5,
+      "sha256": "0b323499186890e01f4603449f52411ec4769085a26500c70a030c191b1a781b",
+      "symbols": [
+        {
+          "name": "SkillEffect",
+          "line": 1
+        },
+        {
+          "name": "activate",
+          "line": 4
+        }
+      ],
+      "resource_literals": []
+    },
+    {
+      "path": "scripts/skills/TransformSkillEffect.gd",
+      "module": "legacy-skills",
+      "review": "full",
+      "lines": 102,
+      "sha256": "ba84f3668be741dc1109c325238aea52c817c198272a7f912dd2d0263e16a3f8",
+      "symbols": [
+        {
+          "name": "activate",
+          "line": 9
+        },
+        {
+          "name": "_create_zombie_from_corpse",
+          "line": 36
+        },
+        {
+          "name": "_get_source_scene",
+          "line": 50
+        },
+        {
+          "name": "_copy_zombie_stats",
+          "line": 55
+        },
+        {
+          "name": "_find_corpses_in_radius",
+          "line": 65
+        },
+        {
+          "name": "_spawn_aura",
+          "line": 81
+        },
+        {
+          "name": "_spawn_puff",
+          "line": 90
+        },
+        {
+          "name": "_get_effect_parent",
+          "line": 99
+        }
+      ],
+      "resource_literals": []
+    },
+    {
+      "path": "scripts/tools/capture_art_v2.gd",
+      "module": "tooling-release",
+      "review": "full",
+      "lines": 90,
+      "sha256": "7997ba496c23e7080f2ceed2bfb71a103d9a86d54df6bd56a17ade617c31b638",
+      "symbols": [
+        {
+          "name": "_initialize",
+          "line": 4
+        },
+        {
+          "name": "settle",
+          "line": 7
+        },
+        {
+          "name": "shot",
+          "line": 10
+        },
+        {
+          "name": "run",
+          "line": 19
+        }
+      ],
+      "resource_literals": [
+        "res://output/art-v2",
+        "res://scenes/interface/TitleScreen.tscn"
+      ]
+    },
+    {
+      "path": "scripts/tools/capture_atmosphere.gd",
+      "module": "tooling-release",
+      "review": "full",
+      "lines": 83,
+      "sha256": "2cc063ddfac3cfa559c8944b7f8d2b210caeba086cf20bc59e1f5131ecb091e6",
+      "symbols": [
+        {
+          "name": "_initialize",
+          "line": 8
+        },
+        {
+          "name": "shot",
+          "line": 11
+        },
+        {
+          "name": "run",
+          "line": 17
+        }
+      ],
+      "resource_literals": [
+        "res://output/atmosphere/",
+        "res://scenes/rebirth/Stillwater.tscn"
+      ]
+    },
+    {
+      "path": "scripts/tools/capture_attack_review.gd",
+      "module": "tooling-release",
+      "review": "full",
+      "lines": 32,
+      "sha256": "aa55ab94e9e0a165488ad178670b450f075f0d29aa26f2da0dcdfbfb0507fdf1",
+      "symbols": [
+        {
+          "name": "_initialize",
+          "line": 4
+        },
+        {
+          "name": "run",
+          "line": 5
+        },
+        {
+          "name": "step",
+          "line": 20
+        }
+      ],
+      "resource_literals": [
+        "res://scenes/rebirth/Stillwater.tscn"
+      ]
+    },
+    {
+      "path": "scripts/tools/capture_duel_3d.gd",
+      "module": "tooling-release",
+      "review": "full",
+      "lines": 54,
+      "sha256": "924ed3293941268e2c3384b3d12ea5f3d91bed7c70bce7be259a9801bdadf28c",
+      "symbols": [
+        {
+          "name": "_initialize",
+          "line": 4
+        },
+        {
+          "name": "run",
+          "line": 6
+        },
+        {
+          "name": "step",
+          "line": 18
+        }
+      ],
+      "resource_literals": [
+        "res://scenes/rebirth/Stillwater.tscn"
+      ]
+    },
+    {
+      "path": "scripts/tools/capture_mastery_showcase.gd",
+      "module": "tooling-release",
+      "review": "full",
+      "lines": 90,
+      "sha256": "d76f2b4e9bd7708b3b86c6d1bb68b300a122fcd94c45e0aaa36a4c9ad0a41543",
+      "symbols": [
+        {
+          "name": "_initialize",
+          "line": 7
+        },
+        {
+          "name": "_process",
+          "line": 8
+        },
+        {
+          "name": "shot",
+          "line": 11
+        },
+        {
+          "name": "run",
+          "line": 16
+        }
+      ],
+      "resource_literals": [
+        "res://output/mastery/",
+        "res://scenes/rebirth/Stillwater.tscn",
+        "res://scripts/rebirth/Duelist.gd"
+      ]
+    },
+    {
+      "path": "scripts/tools/capture_polish.gd",
+      "module": "tooling-release",
+      "review": "full",
+      "lines": 163,
+      "sha256": "d98cacceba05c8ddd99d06a8e0546a5e317c5402a454966b1c4dae99223e552b",
+      "symbols": [
+        {
+          "name": "_initialize",
+          "line": 15
+        },
+        {
+          "name": "_settle",
+          "line": 37
+        },
+        {
+          "name": "_capture_day_world_overview",
+          "line": 41
+        },
+        {
+          "name": "_capture_day_combat_scene",
+          "line": 47
+        },
+        {
+          "name": "_place_fire_lion",
+          "line": 54
+        },
+        {
+          "name": "_place_enemy",
+          "line": 57
+        },
+        {
+          "name": "_capture_inventory_scene",
+          "line": 69
+        },
+        {
+          "name": "_capture_night_world_scene",
+          "line": 81
+        },
+        {
+          "name": "_capture_night_combat_scene",
+          "line": 87
+        },
+        {
+          "name": "_capture_character_portraits",
+          "line": 94
+        },
+        {
+          "name": "_set_night",
+          "line": 123
+        },
+        {
+          "name": "_save_viewport",
+          "line": 138
+        },
+        {
+          "name": "_capture_martial_skill",
+          "line": 142
+        },
+        {
+          "name": "_capture_pause_menu",
+          "line": 156
+        }
+      ],
+      "resource_literals": [
+        "res://assets/xianxia/land.png",
+        "res://assets/xianxia/land_night.png",
+        "res://output/polish",
+        "res://scenes/allies/Zombie.tscn",
+        "res://scenes/enemies/BasicEnemy.tscn",
+        "res://scenes/enemies/FastEnemy.tscn",
+        "res://scenes/enemies/FireLionEnemy.tscn",
+        "res://scenes/main/Main.tscn"
+      ]
+    },
+    {
+      "path": "scripts/tools/capture_readability.gd",
+      "module": "tooling-release",
+      "review": "full",
+      "lines": 41,
+      "sha256": "b51788ae27a92323db86a612cfa0bb20a3a4d7189be02fb407b94e112307ceae",
+      "symbols": [
+        {
+          "name": "_initialize",
+          "line": 6
+        },
+        {
+          "name": "run",
+          "line": 7
+        },
+        {
+          "name": "step",
+          "line": 27
+        }
+      ],
+      "resource_literals": [
+        "res://scenes/rebirth/Stillwater.tscn",
+        "res://scripts/rebirth/Duelist.gd"
+      ]
+    },
+    {
+      "path": "scripts/tools/capture_rebirth.gd",
+      "module": "tooling-release",
+      "review": "full",
+      "lines": 29,
+      "sha256": "f464ec26c3a30e1af009ece35cc2d409be34eeedcbb2059bf6d478ee0a503cca",
+      "symbols": [
+        {
+          "name": "_initialize",
+          "line": 2
+        },
+        {
+          "name": "shot",
+          "line": 4
+        },
+        {
+          "name": "run",
+          "line": 9
+        }
+      ],
+      "resource_literals": [
+        "res://output/rebirth",
+        "res://output/rebirth/01-title.png",
+        "res://output/rebirth/02-court.png",
+        "res://output/rebirth/03-seal.png",
+        "res://output/rebirth/04-pause.png",
+        "res://scenes/rebirth/Stillwater.tscn"
+      ]
+    },
+    {
+      "path": "scripts/tools/capture_showcase.gd",
+      "module": "tooling-release",
+      "review": "full",
+      "lines": 137,
+      "sha256": "98be550cc70dcb7c925e595c8de293bc40f5f5ea6dc9f83102cb35d743124936",
+      "symbols": [
+        {
+          "name": "_initialize",
+          "line": 15
+        },
+        {
+          "name": "_settle",
+          "line": 34
+        },
+        {
+          "name": "_capture_day_world_overview",
+          "line": 38
+        },
+        {
+          "name": "_capture_day_combat_scene",
+          "line": 44
+        },
+        {
+          "name": "_place_fire_lion",
+          "line": 51
+        },
+        {
+          "name": "_place_enemy",
+          "line": 54
+        },
+        {
+          "name": "_capture_inventory_scene",
+          "line": 66
+        },
+        {
+          "name": "_capture_night_world_scene",
+          "line": 78
+        },
+        {
+          "name": "_capture_night_combat_scene",
+          "line": 84
+        },
+        {
+          "name": "_capture_character_portraits",
+          "line": 91
+        },
+        {
+          "name": "_set_night",
+          "line": 120
+        },
+        {
+          "name": "_save_viewport",
+          "line": 135
+        }
+      ],
+      "resource_literals": [
+        "res://assets/xianxia/land.png",
+        "res://assets/xianxia/land_night.png",
+        "res://docs/showcase/images",
+        "res://scenes/allies/Zombie.tscn",
+        "res://scenes/enemies/BasicEnemy.tscn",
+        "res://scenes/enemies/FastEnemy.tscn",
+        "res://scenes/enemies/FireLionEnemy.tscn",
+        "res://scenes/main/Main.tscn"
+      ]
+    },
+    {
+      "path": "scripts/tools/capture_stillwater_ui.gd",
+      "module": "tooling-release",
+      "review": "full",
+      "lines": 60,
+      "sha256": "c97d70a67da4c8fdba9b3397667dc16ce3559860865ee7dcd65ff85a5c0639b6",
+      "symbols": [
+        {
+          "name": "_initialize",
+          "line": 4
+        },
+        {
+          "name": "shot",
+          "line": 5
+        },
+        {
+          "name": "run",
+          "line": 11
+        }
+      ],
+      "resource_literals": [
+        "res://output/ui-polish",
+        "res://output/ui-polish/",
+        "res://scenes/rebirth/Stillwater.tscn"
+      ]
+    },
+    {
+      "path": "scripts/tools/chroma_key_cutout.py",
+      "module": "asset-pipeline",
+      "review": "full",
+      "lines": 279,
+      "sha256": "a6dc8875372c14e21156f19017ceaef6ebae62a26892c748c8fdf54f8fc36439",
+      "symbols": [
+        {
+          "name": "parse_args",
+          "line": 20
+        },
+        {
+          "name": "load_rgba",
+          "line": 87
+        },
+        {
+          "name": "cutout_image",
+          "line": 91
+        },
+        {
+          "name": "is_near_white",
+          "line": 111
+        },
+        {
+          "name": "cutout_outer_white_background",
+          "line": 116
+        },
+        {
+          "name": "enqueue_if_background",
+          "line": 124
+        },
+        {
+          "name": "defringe_white_edges",
+          "line": 149
+        },
+        {
+          "name": "validate_alpha",
+          "line": 191
+        },
+        {
+          "name": "run_cutout",
+          "line": 234
+        },
+        {
+          "name": "run_outer_white_cutout",
+          "line": 245
+        },
+        {
+          "name": "run_validate_alpha",
+          "line": 258
+        },
+        {
+          "name": "main",
+          "line": 266
+        }
+      ],
+      "resource_literals": []
+    },
+    {
+      "path": "scripts/tools/compose_combat_audio.py",
+      "module": "asset-pipeline",
+      "review": "full",
+      "lines": 23,
+      "sha256": "9422b4ac08ed2d0015f8fdcd2f6fbe16d60c23c6328c37676419c52cfecf98da",
+      "symbols": [],
+      "resource_literals": []
+    },
+    {
+      "path": "scripts/tools/compose_qinglan.py",
+      "module": "asset-pipeline",
+      "review": "full",
+      "lines": 28,
+      "sha256": "c1a29e3de5087a4e7c731a1c808f1195e4c692058d97a9c8a16b16b1cc46745f",
+      "symbols": [],
+      "resource_literals": []
+    },
+    {
+      "path": "scripts/tools/extract_gemini_idle_sheet.py",
+      "module": "asset-pipeline",
+      "review": "full",
+      "lines": 119,
+      "sha256": "6e7f09d8a38c5a672ec514327bf8473863fc61f6ca4a57f5ebae3c206cce9783",
+      "symbols": [
+        {
+          "name": "parse_args",
+          "line": 25
+        },
+        {
+          "name": "_content_bbox",
+          "line": 37
+        },
+        {
+          "name": "_extract_frame",
+          "line": 54
+        },
+        {
+          "name": "extract_idle_sheet",
+          "line": 68
+        },
+        {
+          "name": "main",
+          "line": 101
+        }
+      ],
+      "resource_literals": []
+    },
+    {
+      "path": "scripts/tools/extract_gemini_run_sheet.py",
+      "module": "asset-pipeline",
+      "review": "full",
+      "lines": 272,
+      "sha256": "d400c1f3dc4f06cba473a2939ab0f6974fa79956167bf0486deb1a01dff6e479",
+      "symbols": [
+        {
+          "name": "parse_args",
+          "line": 24
+        },
+        {
+          "name": "is_foreground",
+          "line": 53
+        },
+        {
+          "name": "find_components",
+          "line": 58
+        },
+        {
+          "name": "cluster_rows",
+          "line": 90
+        },
+        {
+          "name": "crop_to_transparent",
+          "line": 110
+        },
+        {
+          "name": "_collect_opaque_neighbors",
+          "line": 116
+        },
+        {
+          "name": "_brightness",
+          "line": 128
+        },
+        {
+          "name": "_has_transparent_neighbor",
+          "line": 132
+        },
+        {
+          "name": "cleanup_white_fringe",
+          "line": 142
+        },
+        {
+          "name": "contract_alpha_edges",
+          "line": 177
+        },
+        {
+          "name": "drop_bright_edge_pixels",
+          "line": 196
+        },
+        {
+          "name": "build_aligned_sheet",
+          "line": 216
+        },
+        {
+          "name": "main",
+          "line": 245
+        }
+      ],
+      "resource_literals": []
+    },
+    {
+      "path": "scripts/tools/extract_gemini_still_sheet.py",
+      "module": "asset-pipeline",
+      "review": "full",
+      "lines": 128,
+      "sha256": "7a119bfdf7c49adeff9623169a1c7a2865e8f5a04691300475cbc34b202aa8fd",
+      "symbols": [
+        {
+          "name": "parse_args",
+          "line": 27
+        },
+        {
+          "name": "_find_components",
+          "line": 47
+        },
+        {
+          "name": "_crop_leftmost_sprite",
+          "line": 79
+        },
+        {
+          "name": "_extract_row_sprite",
+          "line": 87
+        },
+        {
+          "name": "main",
+          "line": 102
+        }
+      ],
+      "resource_literals": []
+    },
+    {
+      "path": "scripts/tools/inspect_rig.gd",
+      "module": "tooling-release",
+      "review": "full",
+      "lines": 18,
+      "sha256": "2f87cac943b58bad253482c5f3746e9840435b6e8d35e34f6c4c4ae65450c77e",
+      "symbols": [
+        {
+          "name": "_initialize",
+          "line": 2
+        },
+        {
+          "name": "walk",
+          "line": 4
+        },
+        {
+          "name": "run",
+          "line": 12
+        }
+      ],
+      "resource_literals": [
+        "res://assets/characters/kaykit/Rogue_Hooded.glb"
+      ]
+    },
+    {
+      "path": "scripts/tools/package_release.py",
+      "module": "tooling-release",
+      "review": "full",
+      "lines": 116,
+      "sha256": "1747462ade7ee3723fee2690a2b0de0f1c567d0497f31df446a26be2a91836f8",
+      "symbols": [
+        {
+          "name": "run_engine",
+          "line": 19
+        },
+        {
+          "name": "main",
+          "line": 28
+        }
+      ],
+      "resource_literals": []
+    },
+    {
+      "path": "scripts/tools/play_stillwater.gd",
+      "module": "tooling-release",
+      "review": "full",
+      "lines": 84,
+      "sha256": "12e86e83657c8f7c2fb3f83eb06d3f2353e130b8c1e2e88a967abeb191a5a39a",
+      "symbols": [
+        {
+          "name": "_initialize",
+          "line": 5
+        },
+        {
+          "name": "key",
+          "line": 7
+        },
+        {
+          "name": "move",
+          "line": 12
+        },
+        {
+          "name": "run",
+          "line": 19
+        }
+      ],
+      "resource_literals": [
+        "res://scenes/rebirth/Stillwater.tscn"
+      ]
+    },
+    {
+      "path": "scripts/tools/prepare_art_v2.py",
+      "module": "asset-pipeline",
+      "review": "full",
+      "lines": 17,
+      "sha256": "1bbbb2fc8337b90d0480d0ec9e95b16c9e2ce997a752bd716187c8abe4a271b1",
+      "symbols": [],
+      "resource_literals": []
+    },
+    {
+      "path": "scripts/tools/prepare_attack_v2.py",
+      "module": "asset-pipeline",
+      "review": "full",
+      "lines": 21,
+      "sha256": "68349f47e9a43f33a84e3a96c26790d54e9803d33f41dad7bb9c2ab679a2ab00",
+      "symbols": [],
+      "resource_literals": []
+    },
+    {
+      "path": "scripts/tools/run_tests.py",
+      "module": "tooling-release",
+      "review": "full",
+      "lines": 29,
+      "sha256": "1e5dfc07af4ef868db3d31810f145a9a25f04053112c02ef7dd3ebc2e83d91ae",
+      "symbols": [],
+      "resource_literals": []
+    },
+    {
+      "path": "scripts/tools/synthesize_ritual_audio.py",
+      "module": "asset-pipeline",
+      "review": "full",
+      "lines": 41,
+      "sha256": "021d1fea7be75191488ec1b2d476d031ead308275d9f36a097735492438522cf",
+      "symbols": [
+        {
+          "name": "save",
+          "line": 11
+        }
+      ],
+      "resource_literals": []
+    },
+    {
+      "path": "scripts/tools/verify_release_pack.gd",
+      "module": "tooling-release",
+      "review": "full",
+      "lines": 50,
+      "sha256": "5ad62240a7090c17934737a0753793739d472710a523c98bc11755c3a72ef9d1",
+      "symbols": [
+        {
+          "name": "_initialize",
+          "line": 6
+        },
+        {
+          "name": "check",
+          "line": 9
+        },
+        {
+          "name": "walk",
+          "line": 14
+        },
+        {
+          "name": "verify",
+          "line": 25
+        }
+      ],
+      "resource_literals": [
+        "res://assets/audio/combat/",
+        "res://scenes/rebirth/Stillwater.tscn"
+      ]
+    },
+    {
+      "path": "scripts/ui/Hud.gd",
+      "module": "legacy-interface",
+      "review": "full",
+      "lines": 568,
+      "sha256": "9887ee2428f682ac92087c2f40aab7857a6aca9524574e1467d8e64b75e36f2b",
+      "symbols": [
+        {
+          "name": "_process",
+          "line": 66
+        },
+        {
+          "name": "_ready",
+          "line": 80
+        },
+        {
+          "name": "_unhandled_input",
+          "line": 131
+        },
+        {
+          "name": "_on_player_health_changed",
+          "line": 147
+        },
+        {
+          "name": "_set_hp_text",
+          "line": 151
+        },
+        {
+          "name": "_on_player_damaged",
+          "line": 156
+        },
+        {
+          "name": "_set_danger_health",
+          "line": 160
+        },
+        {
+          "name": "_refresh_danger_overlay",
+          "line": 165
+        },
+        {
+          "name": "_on_player_died",
+          "line": 181
+        },
+        {
+          "name": "_on_player_stamina_changed",
+          "line": 184
+        },
+        {
+          "name": "_set_stamina_text",
+          "line": 187
+        },
+        {
+          "name": "_on_player_blocked",
+          "line": 192
+        },
+        {
+          "name": "_on_player_exhaustion_changed",
+          "line": 196
+        },
+        {
+          "name": "_on_combat_message_requested",
+          "line": 202
+        },
+        {
+          "name": "_on_skill_slots_changed",
+          "line": 207
+        },
+        {
+          "name": "_on_active_skill_slots_changed",
+          "line": 215
+        },
+        {
+          "name": "_update_skill_bar",
+          "line": 221
+        },
+        {
+          "name": "_update_pause_label",
+          "line": 241
+        },
+        {
+          "name": "_update_controls_hint_fade",
+          "line": 245
+        },
+        {
+          "name": "_build_skill_icon_textures",
+          "line": 257
+        },
+        {
+          "name": "_build_item_definitions",
+          "line": 262
+        },
+        {
+          "name": "_connect_inventory_buttons",
+          "line": 296
+        },
+        {
+          "name": "_on_weapon_button_pressed",
+          "line": 307
+        },
+        {
+          "name": "_on_armor_button_pressed",
+          "line": 310
+        },
+        {
+          "name": "_on_bag_button_pressed",
+          "line": 313
+        },
+        {
+          "name": "_move_equipment_to_bag",
+          "line": 336
+        },
+        {
+          "name": "_refresh_inventory_ui",
+          "line": 353
+        },
+        {
+          "name": "_update_equipment_button",
+          "line": 361
+        },
+        {
+          "name": "_update_bag_button",
+          "line": 371
+        },
+        {
+          "name": "_toggle_inventory",
+          "line": 381
+        },
+        {
+          "name": "_open_inventory",
+          "line": 387
+        },
+        {
+          "name": "_close_inventory",
+          "line": 395
+        },
+        {
+          "name": "_show_inventory_status",
+          "line": 402
+        },
+        {
+          "name": "_find_first_empty_bag_slot",
+          "line": 406
+        },
+        {
+          "name": "_get_item_name",
+          "line": 412
+        },
+        {
+          "name": "_get_item_slot",
+          "line": 419
+        },
+        {
+          "name": "_get_item_icon",
+          "line": 424
+        },
+        {
+          "name": "_sync_player_equipment_visuals",
+          "line": 431
+        },
+        {
+          "name": "_get_skill_icon",
+          "line": 437
+        },
+        {
+          "name": "_make_resurrection_icon",
+          "line": 446
+        },
+        {
+          "name": "_make_divine_light_icon",
+          "line": 486
+        },
+        {
+          "name": "_make_empty_icon",
+          "line": 522
+        },
+        {
+          "name": "_fill_rect",
+          "line": 535
+        },
+        {
+          "name": "_make_selected_slot_style",
+          "line": 541
+        },
+        {
+          "name": "_refresh_item_glyph",
+          "line": 553
+        }
+      ],
+      "resource_literals": [
+        "res://assets/xianxia/icon_dash.png",
+        "res://assets/xianxia/icon_shield.png",
+        "res://assets/xianxia/icon_sword.png",
+        "res://scripts/interface/ItemGlyph.gd"
+      ]
+    },
+    {
+      "path": "scripts/ui/OffscreenIndicators.gd",
+      "module": "legacy-interface",
+      "review": "full",
+      "lines": 79,
+      "sha256": "d98c845b6665829a2cb3006587ac78ee4d298b54d1ff471c89520c3f930e6a46",
+      "symbols": [
+        {
+          "name": "_ready",
+          "line": 16
+        },
+        {
+          "name": "_process",
+          "line": 21
+        },
+        {
+          "name": "_get_camera",
+          "line": 24
+        },
+        {
+          "name": "_draw",
+          "line": 30
+        },
+        {
+          "name": "_draw_arrow",
+          "line": 69
+        }
+      ],
+      "resource_literals": []
+    },
+    {
+      "path": "scripts/world/AmbientMagicController.gd",
+      "module": "legacy-environment",
+      "review": "full",
+      "lines": 53,
+      "sha256": "b59d1996985c063031c9c060298df2a68665a57cdf35018e170c6d550c9fee6a",
+      "symbols": [
+        {
+          "name": "_ready",
+          "line": 26
+        },
+        {
+          "name": "_configure_spawn_bounds",
+          "line": 32
+        },
+        {
+          "name": "_configure_background_layers",
+          "line": 37
+        },
+        {
+          "name": "_rebuild_hero_fireflies",
+          "line": 42
+        },
+        {
+          "name": "_rebuild_sparkles",
+          "line": 46
+        },
+        {
+          "name": "_load_texture",
+          "line": 50
+        }
+      ],
+      "resource_literals": [
+        "res://assets/xianxia/crystal_sparkle.png",
+        "res://assets/xianxia/dot_variant_a.png",
+        "res://assets/xianxia/dot_variant_b.png",
+        "res://assets/xianxia/dot_variant_c.png",
+        "res://assets/xianxia/firefly_core.png",
+        "res://assets/xianxia/firefly_halo.png",
+        "res://assets/xianxia/gleam_star.png",
+        "res://scenes/effects/HeroFirefly.tscn"
+      ]
+    },
+    {
+      "path": "scripts/world/BreakableCrate.gd",
+      "module": "legacy-world",
+      "review": "full",
+      "lines": 37,
+      "sha256": "4c6fb3230b27276407fb5ff817f969ab9387d93e97924a80c6871a5e6939a7b8",
+      "symbols": [
+        {
+          "name": "_ready",
+          "line": 11
+        },
+        {
+          "name": "_process",
+          "line": 18
+        },
+        {
+          "name": "shatter",
+          "line": 30
+        }
+      ],
+      "resource_literals": [
+        "res://assets/art_v2/supply_crate.png",
+        "res://resources/shaders/grass_wind.gdshader"
+      ]
+    },
+    {
+      "path": "scripts/world/ChestEncounter.gd",
+      "module": "legacy-world",
+      "review": "full",
+      "lines": 65,
+      "sha256": "3aac4c0bb8996f18d6fc29a41c4363db54bd7537edb7d37cf5fc9f41c97e5f25",
+      "symbols": [
+        {
+          "name": "_ready",
+          "line": 9
+        },
+        {
+          "name": "open",
+          "line": 13
+        },
+        {
+          "name": "open_as_potion",
+          "line": 19
+        },
+        {
+          "name": "open_as_mimic",
+          "line": 30
+        },
+        {
+          "name": "_on_body_entered",
+          "line": 45
+        },
+        {
+          "name": "_get_health_component",
+          "line": 49
+        },
+        {
+          "name": "_get_enemies_parent",
+          "line": 54
+        },
+        {
+          "name": "_report_world_message",
+          "line": 62
+        }
+      ],
+      "resource_literals": []
+    },
+    {
+      "path": "scripts/world/Grassland.gd",
+      "module": "legacy-environment",
+      "review": "full",
+      "lines": 304,
+      "sha256": "3fcb5f10c12210f2039a552d36e41796fa298290e478c6ae9efb3402bfa6c44d",
+      "symbols": [
+        {
+          "name": "_ready",
+          "line": 26
+        },
+        {
+          "name": "_generate",
+          "line": 30
+        },
+        {
+          "name": "_populate_region",
+          "line": 48
+        },
+        {
+          "name": "_spawn_tuft",
+          "line": 76
+        },
+        {
+          "name": "_get_tuft_rect",
+          "line": 108
+        },
+        {
+          "name": "_build_material",
+          "line": 113
+        },
+        {
+          "name": "_build_variant_textures",
+          "line": 119
+        },
+        {
+          "name": "_ensure_layers",
+          "line": 129
+        },
+        {
+          "name": "_clear_layers",
+          "line": 139
+        },
+        {
+          "name": "_collect_grassland_regions",
+          "line": 144
+        },
+        {
+          "name": "_collect_exclusion_rects",
+          "line": 166
+        },
+        {
+          "name": "_collect_rect_from",
+          "line": 175
+        },
+        {
+          "name": "_collect_surface_rect",
+          "line": 188
+        },
+        {
+          "name": "_get_surface_world_rect",
+          "line": 200
+        },
+        {
+          "name": "_texture_rect_world_rect",
+          "line": 207
+        },
+        {
+          "name": "_sprite_world_rect",
+          "line": 212
+        },
+        {
+          "name": "_get_map_bounds",
+          "line": 220
+        },
+        {
+          "name": "_collect_obstacle_rect",
+          "line": 229
+        },
+        {
+          "name": "_get_node_exclusion_rect",
+          "line": 235
+        },
+        {
+          "name": "_get_visual_sprite_rect",
+          "line": 257
+        },
+        {
+          "name": "_get_sprite_rect",
+          "line": 271
+        },
+        {
+          "name": "_is_house_obstacle",
+          "line": 277
+        },
+        {
+          "name": "_get_node_size",
+          "line": 282
+        },
+        {
+          "name": "_rect_intersects_any",
+          "line": 300
+        }
+      ],
+      "resource_literals": [
+        "res://resources/shaders/grass_glow.gdshader",
+        "res://scripts/world/PixelSurface.gd"
+      ]
+    },
+    {
+      "path": "scripts/world/NightAmbienceController.gd",
+      "module": "legacy-environment",
+      "review": "full",
+      "lines": 236,
+      "sha256": "64b5e937d24eaed08ae0f6447146242c8bc32010dc32156500e08909c5006a19",
+      "symbols": [
+        {
+          "name": "_ready",
+          "line": 40
+        },
+        {
+          "name": "_process",
+          "line": 49
+        },
+        {
+          "name": "apply_world_bounds",
+          "line": 57
+        },
+        {
+          "name": "_configure_environment",
+          "line": 63
+        },
+        {
+          "name": "_configure_night_modulate",
+          "line": 75
+        },
+        {
+          "name": "_configure_vignette",
+          "line": 78
+        },
+        {
+          "name": "_build_vignette_texture",
+          "line": 84
+        },
+        {
+          "name": "_build_firefly_glow_texture",
+          "line": 97
+        },
+        {
+          "name": "_build_light_texture",
+          "line": 116
+        },
+        {
+          "name": "_configure_fireflies",
+          "line": 128
+        },
+        {
+          "name": "_configure_sparkles",
+          "line": 167
+        },
+        {
+          "name": "_rebuild_moonlight_patches",
+          "line": 200
+        },
+        {
+          "name": "_setup_firefly_lights",
+          "line": 220
+        },
+        {
+          "name": "toggle",
+          "line": 235
+        }
+      ],
+      "resource_literals": [
+        "res://assets/xianxia/pixel_night_assets/firefly_dot.png",
+        "res://assets/xianxia/pixel_night_assets/moonlight_patch.png",
+        "res://assets/xianxia/pixel_night_assets/sparkle_blue.png"
+      ]
+    },
+    {
+      "path": "scripts/world/PixelSurface.gd",
+      "module": "legacy-environment",
+      "review": "full",
+      "lines": 173,
+      "sha256": "eb765f70dd6d33d693de1b48077e65ab1fba1ffe8ae27cfb8484344888c8b238",
+      "symbols": [
+        {
+          "name": "_ready",
+          "line": 7
+        },
+        {
+          "name": "_notification",
+          "line": 10
+        },
+        {
+          "name": "_generate_texture",
+          "line": 14
+        },
+        {
+          "name": "_get_palette",
+          "line": 57
+        },
+        {
+          "name": "_draw_surface_details",
+          "line": 90
+        },
+        {
+          "name": "_draw_grass_clumps",
+          "line": 101
+        },
+        {
+          "name": "_draw_path_pebbles",
+          "line": 110
+        },
+        {
+          "name": "_draw_dirt_specks",
+          "line": 116
+        },
+        {
+          "name": "_draw_field_specks",
+          "line": 124
+        },
+        {
+          "name": "_draw_stone_tiles",
+          "line": 132
+        },
+        {
+          "name": "create_grass_tuft",
+          "line": 141
+        }
+      ],
+      "resource_literals": []
+    },
+    {
+      "path": "scripts/world/PlaceholderObstacle.gd",
+      "module": "legacy-environment",
+      "review": "full",
+      "lines": 288,
+      "sha256": "fb846c34c73212947b4ff49ce832b31e777746b6cd380b866f9d7a1983fde682",
+      "symbols": [
+        {
+          "name": "_ready",
+          "line": 38
+        },
+        {
+          "name": "_process",
+          "line": 60
+        },
+        {
+          "name": "_apply_visual_texture",
+          "line": 63
+        },
+        {
+          "name": "_apply_split_tree_texture",
+          "line": 88
+        },
+        {
+          "name": "_update_visual_layering",
+          "line": 117
+        },
+        {
+          "name": "_update_house_backdrop",
+          "line": 125
+        },
+        {
+          "name": "_make_house_backdrop_texture",
+          "line": 140
+        },
+        {
+          "name": "_get_visual_z_offset",
+          "line": 151
+        },
+        {
+          "name": "_get_canopy_z_offset",
+          "line": 154
+        },
+        {
+          "name": "_make_region_texture",
+          "line": 159
+        },
+        {
+          "name": "_make_split_image_texture",
+          "line": 165
+        },
+        {
+          "name": "_resolve_texture",
+          "line": 171
+        },
+        {
+          "name": "_build_texture",
+          "line": 183
+        },
+        {
+          "name": "_fill_rect",
+          "line": 204
+        },
+        {
+          "name": "_draw_house",
+          "line": 213
+        },
+        {
+          "name": "_draw_tree",
+          "line": 231
+        },
+        {
+          "name": "_draw_stone",
+          "line": 245
+        },
+        {
+          "name": "_draw_well",
+          "line": 253
+        },
+        {
+          "name": "_draw_wood_pile",
+          "line": 261
+        },
+        {
+          "name": "_make_tree_sway_material",
+          "line": 273
+        },
+        {
+          "name": "_draw_fountain",
+          "line": 282
+        }
+      ],
+      "resource_literals": [
+        "res://assets/art_v2/rocks_moss.png",
+        "res://assets/art_v2/tree_jade.png",
+        "res://assets/xianxia/shrine.png",
+        "res://resources/shaders/grass_wind.gdshader"
+      ]
+    },
+    {
+      "path": "scripts/world/World.gd",
+      "module": "legacy-world",
+      "review": "full",
+      "lines": 671,
+      "sha256": "f386b01362a46fe6ef4265f57f13a3403dfa3b6faf55e68fe490c11a2e7d8dea",
+      "symbols": [
+        {
+          "name": "combat_message_requested",
+          "line": 3
+        },
+        {
+          "name": "_ready",
+          "line": 62
+        },
+        {
+          "name": "_process",
+          "line": 80
+        },
+        {
+          "name": "_unhandled_input",
+          "line": 96
+        },
+        {
+          "name": "report_combat_message",
+          "line": 114
+        },
+        {
+          "name": "report_slam",
+          "line": 117
+        },
+        {
+          "name": "has_slam_charge",
+          "line": 121
+        },
+        {
+          "name": "consume_slam_charge",
+          "line": 124
+        },
+        {
+          "name": "get_path_direction",
+          "line": 131
+        },
+        {
+          "name": "register_navigation_obstacle",
+          "line": 154
+        },
+        {
+          "name": "unregister_navigation_obstacle",
+          "line": 171
+        },
+        {
+          "name": "_try_spawn_enemy",
+          "line": 184
+        },
+        {
+          "name": "_try_spawn_chest",
+          "line": 196
+        },
+        {
+          "name": "_find_random_chest_position",
+          "line": 210
+        },
+        {
+          "name": "_find_grid_chest_position",
+          "line": 226
+        },
+        {
+          "name": "_pick_enemy_scene",
+          "line": 248
+        },
+        {
+          "name": "_get_spawn_interval",
+          "line": 260
+        },
+        {
+          "name": "_get_spawn_position",
+          "line": 264
+        },
+        {
+          "name": "_spawn_random_breakables",
+          "line": 280
+        },
+        {
+          "name": "_find_random_breakable_position",
+          "line": 298
+        },
+        {
+          "name": "_get_breakable_spawn_blockers",
+          "line": 310
+        },
+        {
+          "name": "_is_spawn_rect_clear",
+          "line": 327
+        },
+        {
+          "name": "_get_breakable_spawn_size_from_scene",
+          "line": 338
+        },
+        {
+          "name": "_get_chest_spawn_size_from_scene",
+          "line": 341
+        },
+        {
+          "name": "_get_chest_spawn_size",
+          "line": 344
+        },
+        {
+          "name": "_get_breakable_spawn_size",
+          "line": 350
+        },
+        {
+          "name": "_get_spawn_rect",
+          "line": 356
+        },
+        {
+          "name": "_build_path_grid",
+          "line": 359
+        },
+        {
+          "name": "_collect_navigation_obstacles",
+          "line": 392
+        },
+        {
+          "name": "_collect_static_obstacles",
+          "line": 401
+        },
+        {
+          "name": "_mark_obstacle_solid",
+          "line": 407
+        },
+        {
+          "name": "_get_obstacle_solid_ids",
+          "line": 411
+        },
+        {
+          "name": "_add_path_solid_id",
+          "line": 427
+        },
+        {
+          "name": "_remove_path_solid_id",
+          "line": 432
+        },
+        {
+          "name": "_on_navigation_obstacle_tree_exiting",
+          "line": 443
+        },
+        {
+          "name": "_get_obstacle_size",
+          "line": 446
+        },
+        {
+          "name": "_world_to_path_id",
+          "line": 461
+        },
+        {
+          "name": "_path_id_to_world",
+          "line": 467
+        },
+        {
+          "name": "_find_nearest_walkable_id",
+          "line": 470
+        },
+        {
+          "name": "_spawn_smash_mark",
+          "line": 484
+        },
+        {
+          "name": "_ensure_ambient_magic",
+          "line": 490
+        },
+        {
+          "name": "_ensure_night_ambience",
+          "line": 496
+        },
+        {
+          "name": "_add_obstacle_shadows",
+          "line": 504
+        },
+        {
+          "name": "_attach_shadow",
+          "line": 514
+        },
+        {
+          "name": "_get_obstacle_footprint",
+          "line": 529
+        },
+        {
+          "name": "_build_shadow_texture",
+          "line": 542
+        },
+        {
+          "name": "_add_slam_charge",
+          "line": 557
+        },
+        {
+          "name": "_spawn_random_trees",
+          "line": 562
+        },
+        {
+          "name": "_get_tree_spawn_blockers",
+          "line": 589
+        },
+        {
+          "name": "_collect_static_obstacle_rects",
+          "line": 623
+        },
+        {
+          "name": "_get_obstacle_blocker_rect",
+          "line": 632
+        },
+        {
+          "name": "_get_obstacle_visual_rect",
+          "line": 654
+        },
+        {
+          "name": "_is_house_obstacle",
+          "line": 668
+        }
+      ],
+      "resource_literals": [
+        "res://assets/art_v2/terrain_qinglan.png",
+        "res://assets/art_v2/tree_ginkgo.png",
+        "res://scenes/effects/SmashMark.tscn",
+        "res://scenes/world/AmbientMagicController.tscn",
+        "res://scenes/world/NightAmbienceController.tscn",
+        "res://scripts/polish/GameFeel.gd"
+      ]
+    },
+    {
+      "path": "tests/test_boss_telegraph.gd",
+      "module": "testing",
+      "review": "full",
+      "lines": 40,
+      "sha256": "b13ad339251f739d123fe84b8cc61424682f06dafbb24c84bc4abec2206e05d7",
+      "symbols": [
+        {
+          "name": "check",
+          "line": 3
+        },
+        {
+          "name": "_initialize",
+          "line": 7
+        },
+        {
+          "name": "run",
+          "line": 9
+        }
+      ],
+      "resource_literals": [
+        "res://scenes/boss/MountainGuardian.tscn",
+        "res://scenes/player/Player.tscn"
+      ]
+    },
+    {
+      "path": "tests/test_chest_encounter.gd",
+      "module": "testing",
+      "review": "full",
+      "lines": 110,
+      "sha256": "5797f8db956cbbda3c281062bbf291195fc3da4dcfcb790fe43d451d3c9d8969",
+      "symbols": [
+        {
+          "name": "_initialize",
+          "line": 9
+        },
+        {
+          "name": "_test_world_spawns_chest_after_two_minutes",
+          "line": 24
+        },
+        {
+          "name": "_test_potion_chest_restores_player_health",
+          "line": 45
+        },
+        {
+          "name": "_test_monster_chest_spawns_double_health_mimic",
+          "line": 64
+        },
+        {
+          "name": "_test_mimic_disappears_on_death",
+          "line": 85
+        },
+        {
+          "name": "_assert_true",
+          "line": 97
+        },
+        {
+          "name": "_assert_false",
+          "line": 103
+        },
+        {
+          "name": "_assert_equal",
+          "line": 106
+        }
+      ],
+      "resource_literals": [
+        "res://scenes/enemies/ChestMimic.tscn",
+        "res://scenes/world/ChestEncounter.tscn",
+        "res://scenes/world/World.tscn"
+      ]
+    },
+    {
+      "path": "tests/test_combat_animation.gd",
+      "module": "testing",
+      "review": "full",
+      "lines": 40,
+      "sha256": "8e411645d11b71911a22bd0246583dbe7b20669bd7246c3e3c9174d499e8412c",
+      "symbols": [
+        {
+          "name": "_initialize",
+          "line": 3
+        },
+        {
+          "name": "run",
+          "line": 4
+        }
+      ],
+      "resource_literals": [
+        "res://scenes/rebirth/Stillwater.tscn"
+      ]
+    },
+    {
+      "path": "tests/test_combat_feedback_variants.gd",
+      "module": "testing",
+      "review": "full",
+      "lines": 204,
+      "sha256": "def4dd6067c28ebcaa9069a905309876e7ecc4a7e78733bd2637917dc87d130a",
+      "symbols": [
+        {
+          "name": "TestWorld",
+          "line": 10
+        },
+        {
+          "name": "combat_message_requested",
+          "line": 13
+        },
+        {
+          "name": "has_slam_charge",
+          "line": 19
+        },
+        {
+          "name": "consume_slam_charge",
+          "line": 22
+        },
+        {
+          "name": "_initialize",
+          "line": 29
+        },
+        {
+          "name": "_test_hit_spark_can_be_configured",
+          "line": 39
+        },
+        {
+          "name": "_test_combat_message_priority_prefers_counter_over_momentum",
+          "line": 51
+        },
+        {
+          "name": "_test_combat_message_priority_prefers_impact_over_counter",
+          "line": 61
+        },
+        {
+          "name": "_test_melee_attack_emits_one_message_for_multiple_hits",
+          "line": 71
+        },
+        {
+          "name": "_test_impact_whiff_does_not_consume_or_emit",
+          "line": 101
+        },
+        {
+          "name": "_test_impact_hit_consumes_once_and_emits_one_message",
+          "line": 126
+        },
+        {
+          "name": "_test_perfect_guard_creates_counter_ready_visual_state",
+          "line": 159
+        },
+        {
+          "name": "_add_player_without_skills",
+          "line": 171
+        },
+        {
+          "name": "_disable_player_skills",
+          "line": 178
+        },
+        {
+          "name": "_free_and_wait",
+          "line": 186
+        },
+        {
+          "name": "_capture_combat_message",
+          "line": 191
+        },
+        {
+          "name": "_assert_true",
+          "line": 194
+        },
+        {
+          "name": "_assert_equal",
+          "line": 200
+        }
+      ],
+      "resource_literals": [
+        "res://scenes/effects/HitSpark.tscn",
+        "res://scenes/enemies/BasicEnemy.tscn",
+        "res://scenes/player/Player.tscn"
+      ]
+    },
+    {
+      "path": "tests/test_combat_mastery.gd",
+      "module": "testing",
+      "review": "full",
+      "lines": 156,
+      "sha256": "8e6d3fba80b87c70fec5b741066683591012c1f0a3e1ddb2e14331b8cf1e55d9",
+      "symbols": [
+        {
+          "name": "_initialize",
+          "line": 4
+        },
+        {
+          "name": "check",
+          "line": 7
+        },
+        {
+          "name": "run",
+          "line": 12
+        }
+      ],
+      "resource_literals": [
+        "res://scenes/rebirth/Stillwater.tscn",
+        "res://scripts/rebirth/Duelist.gd"
+      ]
+    },
+    {
+      "path": "tests/test_control_readability.gd",
+      "module": "testing",
+      "review": "full",
+      "lines": 78,
+      "sha256": "a894c850ba10608419ad160eaf8a6c2e158b39321029c5de5d8e476ff3df5a61",
+      "symbols": [
+        {
+          "name": "check",
+          "line": 3
+        },
+        {
+          "name": "_initialize",
+          "line": 7
+        },
+        {
+          "name": "run",
+          "line": 8
+        }
+      ],
+      "resource_literals": [
+        "res://scenes/rebirth/Stillwater.tscn",
+        "res://scripts/rebirth/Duelist.gd"
+      ]
+    },
+    {
+      "path": "tests/test_corpse_navigation.gd",
+      "module": "testing",
+      "review": "full",
+      "lines": 60,
+      "sha256": "7b0ed07b2efc8afa6b4253130586789cd63763fc2db9fe1b3772c08fc873fa47",
+      "symbols": [
+        {
+          "name": "_initialize",
+          "line": 7
+        },
+        {
+          "name": "_test_registered_corpse_blocks_navigation_path",
+          "line": 11
+        },
+        {
+          "name": "_assert_true",
+          "line": 56
+        }
+      ],
+      "resource_literals": [
+        "res://scripts/world/World.gd"
+      ]
+    },
+    {
+      "path": "tests/test_courtyard_atmosphere.gd",
+      "module": "testing",
+      "review": "full",
+      "lines": 76,
+      "sha256": "23afbd84d1047bc57935c90f661b29ed35276a7ca88fb54365c93b30a4151542",
+      "symbols": [
+        {
+          "name": "RitualWorld",
+          "line": 7
+        },
+        {
+          "name": "RitualBoss",
+          "line": 15
+        },
+        {
+          "name": "check",
+          "line": 18
+        },
+        {
+          "name": "_initialize",
+          "line": 23
+        },
+        {
+          "name": "count_blooms",
+          "line": 26
+        },
+        {
+          "name": "run",
+          "line": 32
+        }
+      ],
+      "resource_literals": [
+        "res://scripts/rebirth/CourtyardAtmosphere.gd",
+        "res://scripts/rebirth/Form.gd",
+        "res://scripts/rebirth/SealBloom.gd"
+      ]
+    },
+    {
+      "path": "tests/test_enemy_corpse_lifecycle.gd",
+      "module": "testing",
+      "review": "full",
+      "lines": 53,
+      "sha256": "bf0ba8bfcf48f650a456ebce6c972e504304539dca749575611f1d5fbd92cc61",
+      "symbols": [
+        {
+          "name": "_initialize",
+          "line": 7
+        },
+        {
+          "name": "_assert_true",
+          "line": 40
+        },
+        {
+          "name": "_assert_false",
+          "line": 46
+        },
+        {
+          "name": "_assert_equal",
+          "line": 49
+        }
+      ],
+      "resource_literals": [
+        "res://scenes/enemies/BasicEnemy.tscn"
+      ]
+    },
+    {
+      "path": "tests/test_enemy_corpse_visual.gd",
+      "module": "testing",
+      "review": "full",
+      "lines": 33,
+      "sha256": "bed05fdfe28e42dbdad1f9dafcb9f68b423ff17d09b9f088044b6c6638a62b7b",
+      "symbols": [
+        {
+          "name": "_initialize",
+          "line": 7
+        },
+        {
+          "name": "_assert_true",
+          "line": 26
+        },
+        {
+          "name": "_color_distance",
+          "line": 32
+        }
+      ],
+      "resource_literals": [
+        "res://scenes/enemies/BasicEnemy.tscn"
+      ]
+    },
+    {
+      "path": "tests/test_enemy_direction_quantization.gd",
+      "module": "testing",
+      "review": "full",
+      "lines": 64,
+      "sha256": "840fa7053b8970401089e80e37db04c0ab488ca8123d0531a460f03d2bcae104",
+      "symbols": [
+        {
+          "name": "_initialize",
+          "line": 13
+        },
+        {
+          "name": "_test_enemy_prefers_cardinal_rows_outside_diagonal_window",
+          "line": 18
+        },
+        {
+          "name": "_test_enemy_uses_diagonal_rows_inside_diagonal_window",
+          "line": 31
+        },
+        {
+          "name": "_assert_row",
+          "line": 43
+        },
+        {
+          "name": "_assert_true",
+          "line": 54
+        },
+        {
+          "name": "_assert_equal",
+          "line": 60
+        }
+      ],
+      "resource_literals": [
+        "res://scenes/enemies/FireLionEnemy.tscn"
+      ]
+    },
+    {
+      "path": "tests/test_enemy_hit_feedback.gd",
+      "module": "testing",
+      "review": "full",
+      "lines": 29,
+      "sha256": "6d5f8ba3234a338af0783370884e22bf44f3ebd740619c00f2a2d5d8ca1bc2c4",
+      "symbols": [
+        {
+          "name": "_initialize",
+          "line": 7
+        },
+        {
+          "name": "_assert_true",
+          "line": 25
+        }
+      ],
+      "resource_literals": [
+        "res://scenes/enemies/BasicEnemy.tscn"
+      ]
+    },
+    {
+      "path": "tests/test_extract_idle_sheet.py",
+      "module": "testing",
+      "review": "full",
+      "lines": 57,
+      "sha256": "0d1eb46a6008899d1e4d73a71ed8db5176c3067bc51adb824e96b72b661823e7",
+      "symbols": [
+        {
+          "name": "_make_white_sheet",
+          "line": 14
+        },
+        {
+          "name": "test_content_bbox_empty_returns_none",
+          "line": 27
+        },
+        {
+          "name": "test_content_bbox_single_pixel",
+          "line": 32
+        },
+        {
+          "name": "test_extract_idle_sheet_uniform_cell_grid",
+          "line": 38
+        },
+        {
+          "name": "test_extract_idle_sheet_shorter_than_full_source",
+          "line": 45
+        },
+        {
+          "name": "test_extract_idle_sheet_no_white_background",
+          "line": 51
+        }
+      ],
+      "resource_literals": []
+    },
+    {
+      "path": "tests/test_fire_lion_enemy.gd",
+      "module": "testing",
+      "review": "full",
+      "lines": 60,
+      "sha256": "acd9ce5bfc11763409e51c3f1070fc6d29283f90a3d6c0412ad6166c96ee1f3f",
+      "symbols": [
+        {
+          "name": "_initialize",
+          "line": 9
+        },
+        {
+          "name": "_test_fire_lion_scene_uses_fire_lion_run_sheet",
+          "line": 14
+        },
+        {
+          "name": "_test_world_can_spawn_fire_lion_enemy",
+          "line": 28
+        },
+        {
+          "name": "_assert_true",
+          "line": 50
+        },
+        {
+          "name": "_assert_equal",
+          "line": 56
+        }
+      ],
+      "resource_literals": [
+        "res://assets/xianxia/fire_lion_run_aligned.png",
+        "res://scenes/enemies/FireLionEnemy.tscn",
+        "res://scenes/world/World.tscn"
+      ]
+    },
+    {
+      "path": "tests/test_fire_lion_light.gd",
+      "module": "testing",
+      "review": "full",
+      "lines": 97,
+      "sha256": "12563aa3c7892b9affc4a194d1db4cfa5460d84d3aa5b590c275ad5ab9740571",
+      "symbols": [
+        {
+          "name": "_initialize",
+          "line": 8
+        },
+        {
+          "name": "_test_fire_lion_light_is_warm_and_broad_at_night",
+          "line": 15
+        },
+        {
+          "name": "_test_fire_lion_light_dims_in_daylight",
+          "line": 33
+        },
+        {
+          "name": "_test_fire_lion_light_flickers_over_time",
+          "line": 53
+        },
+        {
+          "name": "_test_fire_lion_corpse_light_goes_dark",
+          "line": 73
+        },
+        {
+          "name": "_assert_true",
+          "line": 93
+        }
+      ],
+      "resource_literals": [
+        "res://scenes/enemies/FireLionEnemy.tscn",
+        "res://scenes/world/World.tscn"
+      ]
+    },
+    {
+      "path": "tests/test_fire_lion_transform_rules.gd",
+      "module": "testing",
+      "review": "full",
+      "lines": 73,
+      "sha256": "c15e3d1d9e565579a654a7da58c36294fa0e5e56c7e9974c26914ef009b0476b",
+      "symbols": [
+        {
+          "name": "_initialize",
+          "line": 8
+        },
+        {
+          "name": "_test_fire_lion_corpse_is_not_transformable",
+          "line": 12
+        },
+        {
+          "name": "_make_context",
+          "line": 43
+        },
+        {
+          "name": "_disable_player_skills",
+          "line": 54
+        },
+        {
+          "name": "_assert_true",
+          "line": 63
+        },
+        {
+          "name": "_assert_equal",
+          "line": 69
+        }
+      ],
+      "resource_literals": [
+        "res://scenes/enemies/FireLionEnemy.tscn",
+        "res://scenes/player/Player.tscn",
+        "res://scenes/skills/TransformSkillEffect.tscn"
+      ]
+    },
+    {
+      "path": "tests/test_hud_visual_polish.gd",
+      "module": "testing",
+      "review": "full",
+      "lines": 123,
+      "sha256": "8f0ba34b137876fe722a4c95851378faf4b894ae7fe13bcb2339403427957366",
+      "symbols": [
+        {
+          "name": "_initialize",
+          "line": 7
+        },
+        {
+          "name": "_test_hud_uses_framed_pixel_panels",
+          "line": 16
+        },
+        {
+          "name": "_test_health_and_stamina_are_numbered_color_bars",
+          "line": 28
+        },
+        {
+          "name": "_test_selected_skill_text_panel_is_removed",
+          "line": 48
+        },
+        {
+          "name": "_test_controls_hint_is_small_top_text_that_fades_after_start",
+          "line": 58
+        },
+        {
+          "name": "_test_skill_slots_use_icons_for_transform_and_empty_slots",
+          "line": 79
+        },
+        {
+          "name": "_fill_color",
+          "line": 101
+        },
+        {
+          "name": "_test_skill_slots_have_themed_frames",
+          "line": 107
+        },
+        {
+          "name": "_assert_true",
+          "line": 119
+        }
+      ],
+      "resource_literals": [
+        "res://ui/Hud.tscn"
+      ]
+    },
+    {
+      "path": "tests/test_inventory_ui.gd",
+      "module": "testing",
+      "review": "full",
+      "lines": 94,
+      "sha256": "a32e7c3dd98f00a8dfdc578228b30a762b2cd9647f92387acf4f44806bc20b5d",
+      "symbols": [
+        {
+          "name": "_initialize",
+          "line": 7
+        },
+        {
+          "name": "_test_inventory_opens_with_default_equipped_sword",
+          "line": 13
+        },
+        {
+          "name": "_test_inventory_toggle_pauses_and_resumes_game",
+          "line": 26
+        },
+        {
+          "name": "_test_inventory_moves_items_between_bag_and_equipment",
+          "line": 49
+        },
+        {
+          "name": "_find_bag_slot_by_text",
+          "line": 80
+        },
+        {
+          "name": "_assert_true",
+          "line": 87
+        },
+        {
+          "name": "_assert_false",
+          "line": 93
+        }
+      ],
+      "resource_literals": [
+        "res://scenes/world/World.tscn"
+      ]
+    },
+    {
+      "path": "tests/test_journey_controls.gd",
+      "module": "testing",
+      "review": "full",
+      "lines": 66,
+      "sha256": "f7e7f153cc2e5579326ed8aa0deb90bcdeb954e7e7775ac27065462b67aabd94",
+      "symbols": [
+        {
+          "name": "_initialize",
+          "line": 4
+        },
+        {
+          "name": "check",
+          "line": 7
+        },
+        {
+          "name": "run",
+          "line": 12
+        }
+      ],
+      "resource_literals": [
+        "res://scenes/main/Main.tscn"
+      ]
+    },
+    {
+      "path": "tests/test_mature_combat.gd",
+      "module": "testing",
+      "review": "full",
+      "lines": 91,
+      "sha256": "2ea55a211e4e25404f3be39f7c07258d52f80af6073760d9142881c0bcf445f0",
+      "symbols": [
+        {
+          "name": "_initialize",
+          "line": 4
+        },
+        {
+          "name": "check",
+          "line": 7
+        },
+        {
+          "name": "run",
+          "line": 12
+        }
+      ],
+      "resource_literals": [
+        "res://scenes/enemies/BasicEnemy.tscn",
+        "res://scenes/world/World.tscn"
+      ]
+    },
+    {
+      "path": "tests/test_pixel_art_scene_visuals.gd",
+      "module": "testing",
+      "review": "full",
+      "lines": 267,
+      "sha256": "31ef7da54ab756f7380b4e0bd82234c79e025fc0f9c825fb12f5c9bffe005671",
+      "symbols": [
+        {
+          "name": "_initialize",
+          "line": 13
+        },
+        {
+          "name": "_test_world_surfaces_use_pixel_textures",
+          "line": 27
+        },
+        {
+          "name": "_test_normal_ground_is_soft_green",
+          "line": 41
+        },
+        {
+          "name": "_test_placeholder_obstacles_use_pixel_sprites",
+          "line": 57
+        },
+        {
+          "name": "_test_tree_placeholder_uses_large_passable_tree_texture",
+          "line": 70
+        },
+        {
+          "name": "_test_house_placeholder_uses_shrine_texture",
+          "line": 96
+        },
+        {
+          "name": "_test_world_uses_curated_house_layout",
+          "line": 108
+        },
+        {
+          "name": "_test_breakable_crate_uses_pixel_sprite",
+          "line": 125
+        },
+        {
+          "name": "_test_breakable_crate_renders_as_tree",
+          "line": 138
+        },
+        {
+          "name": "_test_grassland_avoids_breakable_collision_shapes",
+          "line": 151
+        },
+        {
+          "name": "_test_grassland_avoids_house_visual_bounds",
+          "line": 182
+        },
+        {
+          "name": "_test_grass_tuft_texture_is_bushy",
+          "line": 214
+        },
+        {
+          "name": "_texture_rect_world_rect",
+          "line": 230
+        },
+        {
+          "name": "_count_sprite_descendants",
+          "line": 233
+        },
+        {
+          "name": "_collect_sprite_descendants",
+          "line": 241
+        },
+        {
+          "name": "_sprite_world_rect",
+          "line": 249
+        },
+        {
+          "name": "_assert_true",
+          "line": 257
+        },
+        {
+          "name": "_assert_equal",
+          "line": 263
+        }
+      ],
+      "resource_literals": [
+        "res://assets/art_v2/supply_crate.png",
+        "res://assets/art_v2/tree_jade.png",
+        "res://scenes/world/World.tscn",
+        "res://scenes/world/placeholders/BreakableCrate.tscn",
+        "res://scenes/world/placeholders/HousePlaceholder.tscn",
+        "res://scenes/world/placeholders/TreePlaceholder.tscn",
+        "res://scripts/world/Grassland.gd",
+        "res://scripts/world/PixelSurface.gd"
+      ]
+    },
+    {
+      "path": "tests/test_player_damage_feedback.gd",
+      "module": "testing",
+      "review": "full",
+      "lines": 90,
+      "sha256": "5a265f319297016d75650be6c8978f0be85cb077a76a8a64a169768d7e526901",
+      "symbols": [
+        {
+          "name": "_initialize",
+          "line": 9
+        },
+        {
+          "name": "_test_player_hit_feedback_is_obvious",
+          "line": 15
+        },
+        {
+          "name": "_test_enemy_attack_gives_player_tiny_hitback",
+          "line": 32
+        },
+        {
+          "name": "_test_danger_overlay_tracks_low_health",
+          "line": 52
+        },
+        {
+          "name": "_assert_true",
+          "line": 77
+        },
+        {
+          "name": "_assert_false",
+          "line": 83
+        },
+        {
+          "name": "_assert_equal",
+          "line": 86
+        }
+      ],
+      "resource_literals": [
+        "res://scenes/enemies/BasicEnemy.tscn",
+        "res://scenes/player/Player.tscn",
+        "res://scenes/world/World.tscn"
+      ]
+    },
+    {
+      "path": "tests/test_player_effect_hosts.gd",
+      "module": "testing",
+      "review": "full",
+      "lines": 52,
+      "sha256": "6351d345fae6527f05f5f8d0889baf7758f2d9ac72f89f979a82e668257aa6ad",
+      "symbols": [
+        {
+          "name": "_initialize",
+          "line": 7
+        },
+        {
+          "name": "_test_player_attack_effects_work_without_current_scene",
+          "line": 13
+        },
+        {
+          "name": "_test_player_afterimage_does_not_use_invalid_interval_callback_chain",
+          "line": 27
+        },
+        {
+          "name": "_test_player_has_night_readability_lights",
+          "line": 38
+        },
+        {
+          "name": "_assert_true",
+          "line": 48
+        }
+      ],
+      "resource_literals": [
+        "res://scenes/player/Player.tscn"
+      ]
+    },
+    {
+      "path": "tests/test_player_transform_skill_slot.gd",
+      "module": "testing",
+      "review": "full",
+      "lines": 21,
+      "sha256": "0db8a15e2c15a59187df027ea8b1e56fc52af11eb240e5a2dabef127517cc6ac",
+      "symbols": [
+        {
+          "name": "_initialize",
+          "line": 7
+        },
+        {
+          "name": "_assert_equal",
+          "line": 17
+        }
+      ],
+      "resource_literals": [
+        "res://scenes/player/Player.tscn"
+      ]
+    },
+    {
+      "path": "tests/test_rain_combat.gd",
+      "module": "testing",
+      "review": "full",
+      "lines": 118,
+      "sha256": "29123b720dc7a34542508b5bc54705c14a3db612ddae0e6ba69fa1aae4000b07",
+      "symbols": [
+        {
+          "name": "check",
+          "line": 3
+        },
+        {
+          "name": "_initialize",
+          "line": 7
+        },
+        {
+          "name": "run",
+          "line": 9
+        }
+      ],
+      "resource_literals": [
+        "res://scenes/rebirth/Stillwater.tscn",
+        "res://scripts/rebirth/Duelist.gd",
+        "res://scripts/rebirth/SpiritBolt.gd"
+      ]
+    },
+    {
+      "path": "tests/test_retro_xianxia_entity_visuals.gd",
+      "module": "testing",
+      "review": "full",
+      "lines": 299,
+      "sha256": "996a1a05b28b8f7636a6cf21fb97b283ac4c4b5a06b807856904d53206089c0d",
+      "symbols": [
+        {
+          "name": "_initialize",
+          "line": 11
+        },
+        {
+          "name": "_test_player_is_white_robed_pixel_swordsman",
+          "line": 21
+        },
+        {
+          "name": "_test_player_uses_idle_and_four_direction_run_textures",
+          "line": 48
+        },
+        {
+          "name": "_test_skeleton_enemies_keep_distinct_natural_accents",
+          "line": 174
+        },
+        {
+          "name": "_test_corpse_keeps_source_skeleton_accent",
+          "line": 210
+        },
+        {
+          "name": "_test_zombie_keeps_source_accent_with_corruption_tint",
+          "line": 226
+        },
+        {
+          "name": "_test_player_attack_animation_moves_sword",
+          "line": 240
+        },
+        {
+          "name": "_test_player_idle_animation_uses_sheet_frames",
+          "line": 268
+        },
+        {
+          "name": "_color_distance",
+          "line": 286
+        },
+        {
+          "name": "_assert_true",
+          "line": 289
+        },
+        {
+          "name": "_assert_equal",
+          "line": 295
+        }
+      ],
+      "resource_literals": [
+        "res://assets/xianxia/players_gemini_aligned_5dir_run.png",
+        "res://assets/xianxia/sword.png",
+        "res://scenes/allies/Zombie.tscn",
+        "res://scenes/enemies/BasicEnemy.tscn",
+        "res://scenes/enemies/FastEnemy.tscn",
+        "res://scenes/player/Player.tscn"
+      ]
+    },
+    {
+      "path": "tests/test_run_director.gd",
+      "module": "testing",
+      "review": "full",
+      "lines": 130,
+      "sha256": "639657da62a8a2fb18119b05b33455be0115044fbd6c49c15cec4ab5789b6b0d",
+      "symbols": [
+        {
+          "name": "_initialize",
+          "line": 4
+        },
+        {
+          "name": "check",
+          "line": 5
+        },
+        {
+          "name": "dummy",
+          "line": 9
+        },
+        {
+          "name": "run",
+          "line": 20
+        }
+      ],
+      "resource_literals": [
+        "res://scenes/rebirth/Stillwater.tscn",
+        "res://scripts/rebirth/Duelist.gd",
+        "res://scripts/rebirth/SpiritBolt.gd"
+      ]
+    },
+    {
+      "path": "tests/test_sprite_sheet_cleanup.py",
+      "module": "testing",
+      "review": "full",
+      "lines": 74,
+      "sha256": "ff09b7693e005739c6db249a9550031d01983c513c06fdbad87a43f0130e4f22",
+      "symbols": [
+        {
+          "name": "has_transparent_neighbor",
+          "line": 14
+        },
+        {
+          "name": "brightness",
+          "line": 24
+        },
+        {
+          "name": "has_dark_opaque_neighbor",
+          "line": 28
+        },
+        {
+          "name": "count_white_fringe_pixels",
+          "line": 41
+        },
+        {
+          "name": "main",
+          "line": 60
+        }
+      ],
+      "resource_literals": []
+    },
+    {
+      "path": "tests/test_stillwater.gd",
+      "module": "testing",
+      "review": "full",
+      "lines": 84,
+      "sha256": "2c7bc0e5addc9f679471325023271681c1ed4d6d67cf21867b96ed04658690e4",
+      "symbols": [
+        {
+          "name": "check",
+          "line": 3
+        },
+        {
+          "name": "_initialize",
+          "line": 7
+        },
+        {
+          "name": "run",
+          "line": 9
+        }
+      ],
+      "resource_literals": [
+        "res://scenes/rebirth/Stillwater.tscn",
+        "res://scripts/rebirth/Duelist.gd"
+      ]
+    },
+    {
+      "path": "tests/test_stillwater_combat.gd",
+      "module": "testing",
+      "review": "full",
+      "lines": 62,
+      "sha256": "ec2e4987168cb431b36438e59748db7d87c4a23c710649608896b8dfc3f85999",
+      "symbols": [
+        {
+          "name": "check",
+          "line": 3
+        },
+        {
+          "name": "_initialize",
+          "line": 7
+        },
+        {
+          "name": "run",
+          "line": 9
+        }
+      ],
+      "resource_literals": [
+        "res://scenes/rebirth/Stillwater.tscn",
+        "res://scripts/rebirth/Duelist.gd"
+      ]
+    },
+    {
+      "path": "tests/test_stillwater_ui.gd",
+      "module": "testing",
+      "review": "full",
+      "lines": 111,
+      "sha256": "95751c0bd84d1884f7806d4c2c96235a515ee52527a997d1015321ab6eaada62",
+      "symbols": [
+        {
+          "name": "check",
+          "line": 5
+        },
+        {
+          "name": "_initialize",
+          "line": 9
+        },
+        {
+          "name": "find_button",
+          "line": 10
+        },
+        {
+          "name": "key",
+          "line": 16
+        },
+        {
+          "name": "menu_fits",
+          "line": 25
+        },
+        {
+          "name": "run",
+          "line": 31
+        }
+      ],
+      "resource_literals": [
+        "res://scenes/rebirth/Stillwater.tscn"
+      ]
+    },
+    {
+      "path": "tests/test_transform_skill.gd",
+      "module": "testing",
+      "review": "full",
+      "lines": 130,
+      "sha256": "608c7821ade6a36203cd70aedf16f5ed5c50ea9b756d7614adadcc9dc8f9e8ac",
+      "symbols": [
+        {
+          "name": "_initialize",
+          "line": 9
+        },
+        {
+          "name": "_make_context",
+          "line": 78
+        },
+        {
+          "name": "_disable_player_skills",
+          "line": 89
+        },
+        {
+          "name": "_make_settled_corpse",
+          "line": 98
+        },
+        {
+          "name": "_is_zombie_tinted",
+          "line": 113
+        },
+        {
+          "name": "_assert_true",
+          "line": 117
+        },
+        {
+          "name": "_assert_false",
+          "line": 123
+        },
+        {
+          "name": "_assert_equal",
+          "line": 126
+        }
+      ],
+      "resource_literals": [
+        "res://scenes/enemies/BasicEnemy.tscn",
+        "res://scenes/enemies/FastEnemy.tscn",
+        "res://scenes/player/Player.tscn",
+        "res://scenes/skills/TransformSkillEffect.tscn"
+      ]
+    },
+    {
+      "path": "tests/test_viewport_layout.gd",
+      "module": "testing",
+      "review": "full",
+      "lines": 19,
+      "sha256": "4f5cffd3aeccc22422e1522c83e38cfd80622167152319d050fd51dba04d1928",
+      "symbols": [
+        {
+          "name": "_initialize",
+          "line": 5
+        },
+        {
+          "name": "_test_gameplay_viewport_uses_fixed_canvas",
+          "line": 9
+        },
+        {
+          "name": "_assert_equal",
+          "line": 15
+        }
+      ],
+      "resource_literals": []
+    },
+    {
+      "path": "tests/test_weapon_timing.gd",
+      "module": "testing",
+      "review": "full",
+      "lines": 37,
+      "sha256": "87feeadd40e29e72c41dc88e1e6b0607e45f64e6fdb1178500698f05ca3268f4",
+      "symbols": [
+        {
+          "name": "check",
+          "line": 3
+        },
+        {
+          "name": "_initialize",
+          "line": 7
+        },
+        {
+          "name": "run",
+          "line": 9
+        }
+      ],
+      "resource_literals": [
+        "res://scenes/player/Player.tscn"
+      ]
+    },
+    {
+      "path": "tests/test_white_background_flood_cutout.py",
+      "module": "testing",
+      "review": "full",
+      "lines": 52,
+      "sha256": "804a0ab515cfdd7658665395caa3a397df8bc92b79124f019efcc90dd5be2210",
+      "symbols": [
+        {
+          "name": "WhiteBackgroundFloodCutoutTests",
+          "line": 19
+        },
+        {
+          "name": "test_removes_only_outer_connected_white_background",
+          "line": 20
+        }
+      ],
+      "resource_literals": []
+    },
+    {
+      "path": "tests/test_world_enemy_spawn_positions.gd",
+      "module": "testing",
+      "review": "full",
+      "lines": 53,
+      "sha256": "2b7687edc98befdf3c5a0373e98756a2ad5429f60d9fa931b199bef81443caae",
+      "symbols": [
+        {
+          "name": "_initialize",
+          "line": 8
+        },
+        {
+          "name": "_test_spawn_positions_stay_inside_playable_bounds",
+          "line": 13
+        },
+        {
+          "name": "_test_spawned_enemy_home_matches_spawn_position",
+          "line": 25
+        },
+        {
+          "name": "_assert_true",
+          "line": 43
+        },
+        {
+          "name": "_assert_equal",
+          "line": 49
+        }
+      ],
+      "resource_literals": [
+        "res://scenes/enemies/BasicEnemy.tscn",
+        "res://scenes/world/World.tscn"
+      ]
+    },
+    {
+      "path": "tests/test_world_firefly_ambience.gd",
+      "module": "testing",
+      "review": "full",
+      "lines": 155,
+      "sha256": "2619727b27b1125fb958a54e46fbdad721ef343a8f7ae6d4e38584bd6bc0a765",
+      "symbols": [
+        {
+          "name": "_initialize",
+          "line": 13
+        },
+        {
+          "name": "_test_required_night_assets_exist",
+          "line": 24
+        },
+        {
+          "name": "_test_world_creates_night_ambience_controller",
+          "line": 28
+        },
+        {
+          "name": "_test_controller_owns_expected_layer_groups",
+          "line": 38
+        },
+        {
+          "name": "_test_screen_fx_stays_outside_hud_canvas_layer",
+          "line": 61
+        },
+        {
+          "name": "_test_particle_and_patch_layers_are_populated",
+          "line": 79
+        },
+        {
+          "name": "_test_firefly_particles_stay_small",
+          "line": 103
+        },
+        {
+          "name": "_test_world_keeps_glow_environment_under_night_ambience",
+          "line": 119
+        },
+        {
+          "name": "_test_world_enemy_instances_have_accent_lights",
+          "line": 132
+        },
+        {
+          "name": "_assert_true",
+          "line": 151
+        }
+      ],
+      "resource_literals": [
+        "res://assets/xianxia/pixel_night_assets/firefly_dot.png",
+        "res://assets/xianxia/pixel_night_assets/light_circle.png",
+        "res://assets/xianxia/pixel_night_assets/moonlight_patch.png",
+        "res://assets/xianxia/pixel_night_assets/sparkle_blue.png",
+        "res://scenes/world/World.tscn"
+      ]
+    },
+    {
+      "path": "tests/test_world_random_breakables.gd",
+      "module": "testing",
+      "review": "full",
+      "lines": 71,
+      "sha256": "c2dfae55f10aec56675ce69eea146d2e8fc84f76e99d5a56e4b59f8979515542",
+      "symbols": [
+        {
+          "name": "_initialize",
+          "line": 7
+        },
+        {
+          "name": "_test_world_adds_limited_random_breakables",
+          "line": 12
+        },
+        {
+          "name": "_test_random_breakables_do_not_overlap_obstacles_or_each_other",
+          "line": 23
+        },
+        {
+          "name": "_get_breakables",
+          "line": 44
+        },
+        {
+          "name": "_get_static_obstacles",
+          "line": 51
+        },
+        {
+          "name": "_collect_static_obstacles",
+          "line": 56
+        },
+        {
+          "name": "_get_world_rect",
+          "line": 62
+        },
+        {
+          "name": "_assert_true",
+          "line": 67
+        }
+      ],
+      "resource_literals": [
+        "res://scenes/world/World.tscn"
+      ]
+    },
+    {
+      "path": "tests/test_zombie_targeting.gd",
+      "module": "testing",
+      "review": "full",
+      "lines": 70,
+      "sha256": "508406742dccb1e5e0c434d207171fd829b4a99407405bec894bb031ffff865f",
+      "symbols": [
+        {
+          "name": "_initialize",
+          "line": 8
+        },
+        {
+          "name": "_assert_true",
+          "line": 53
+        },
+        {
+          "name": "_assert_false",
+          "line": 59
+        },
+        {
+          "name": "_assert_equal",
+          "line": 62
+        },
+        {
+          "name": "_is_zombie_tinted",
+          "line": 68
+        }
+      ],
+      "resource_literals": [
+        "res://scenes/allies/Zombie.tscn",
+        "res://scenes/enemies/BasicEnemy.tscn",
+        "res://scenes/player/Player.tscn"
+      ]
+    },
+    {
+      "path": "ui/Hud.tscn",
+      "module": "legacy-interface",
+      "review": "full",
+      "lines": 659,
+      "sha256": "4e9c22a2312b7e5c820f412bd33e63455ca4709f8640a0bbdd2d154b77b1c003",
+      "symbols": [],
+      "resource_literals": [
+        "res://scripts/ui/Hud.gd",
+        "res://scripts/ui/OffscreenIndicators.gd"
+      ]
+    }
+  ]
+}

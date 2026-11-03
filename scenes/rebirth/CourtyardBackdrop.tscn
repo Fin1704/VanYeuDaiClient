@@ -1,0 +1,477 @@
+[gd_scene format=4]
+
+[ext_resource type="Shader" path="res://scripts/rebirth/shaders/RainRipples.gdshader" id="1_gckgc"]
+[ext_resource type="Shader" path="res://scripts/rebirth/shaders/FallingLeaves.gdshader" id="2_ceyl0"]
+[ext_resource type="Shader" path="res://scripts/rebirth/shaders/LakeMist.gdshader" id="3_sv2qb"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_k8qa1"]
+render_priority = 0
+shader = ExtResource("1_gckgc")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_afv0b"]
+size = Vector2(1.1, 1.1)
+
+[sub_resource type="MultiMesh" id="MultiMesh_yl0lc"]
+transform_format = 1
+use_custom_data = true
+instance_count = 76
+mesh = SubResource("PlaneMesh_afv0b")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wovn4"]
+render_priority = 0
+shader = ExtResource("2_ceyl0")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_k064i"]
+_surfaces = [{
+"aabb": AABB(-0.17, 0, -0.2, 0.34, 0.035, 0.31),
+"format": 34359738375,
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 30,
+"vertex_data": PackedByteArray("AAAAAClcDz0AAAAArkdhPQAAAADsUTi9AAAAAAAAAADNzEy+AAAAAClcDz0AAAAAexQuPgAAAAAK16O9rkdhPQAAAADsUTi9AAAAAClcDz0AAAAAzczMPQAAAADNzMw8exQuPgAAAAAK16O9AAAAAClcDz0AAAAAKVwPPgAAAACuR+E9zczMPQAAAADNzMw8AAAAAClcDz0AAAAAAAAAAAAAAAC4HoU9KVwPPgAAAACuR+E9AAAAAClcDz0AAAAAKVwPvgAAAACuR+E9AAAAAAAAAAC4HoU9AAAAAClcDz0AAAAAzczMvQAAAADNzMw8KVwPvgAAAACuR+E9AAAAAClcDz0AAAAAexQuvgAAAAAK16O9zczMvQAAAADNzMw8AAAAAClcDz0AAAAArkdhvQAAAADsUTi9exQuvgAAAAAK16O9AAAAAClcDz0AAAAAAAAAAAAAAADNzEy+rkdhvQAAAADsUTi9/3+7CywBmbnkdbw2KBGzof9/EBNAAxS1/3+7CywBmbnyfJEk4wh3q+R1vDYoEbOh/3+7CywBmblUXssgSikEz/J8kSTjCHer/3+7CywBmbmNY9kL9RqExFReyyBKKQTP/3+7CywBmbnMrAAA/jnZtY1j2Qv1GoTE/3+7CywBmblxnNkLESDPuMysAAD+Odm1/3+7CywBmbmqocsgeynnsHGc2QsRIM+4/3+7CywBmbkMg5Ek5A3qqaqhyyB7Keew/3+7CywBmbkairw22B3GnwyDkSTkDeqp/3+7CywBmbn/fxATQAMUtRqKvDbYHcaf")
+}]
+
+[sub_resource type="MultiMesh" id="MultiMesh_knjw5"]
+transform_format = 1
+use_colors = true
+use_custom_data = true
+instance_count = 65
+mesh = SubResource("ArrayMesh_k064i")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6wesk"]
+albedo_color = Color(0.21176471, 0.3372549, 0.38039216, 1)
+metallic = 0.05
+roughness = 0.94
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_cipdj"]
+_surfaces = [{
+"aabb": AABB(-0.77446395, 0, -0.800549, 1.8287058, 1.09, 1.5948639),
+"format": 34359738375,
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 105,
+"vertex_data": PackedByteArray("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")
+}]
+
+[sub_resource type="MultiMesh" id="MultiMesh_88cuk"]
+transform_format = 1
+instance_count = 9
+mesh = SubResource("ArrayMesh_cipdj")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pj7b1"]
+albedo_color = Color(0.15686275, 0.27058825, 0.3019608, 1)
+metallic = 0.05
+roughness = 0.94
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_3ikbl"]
+_surfaces = [{
+"aabb": AABB(-0.8149065, 0, -0.9137822, 1.9543878, 1.09, 1.8705852),
+"format": 34359738375,
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 105,
+"vertex_data": PackedByteArray("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")
+}]
+
+[sub_resource type="MultiMesh" id="MultiMesh_xj8wg"]
+transform_format = 1
+instance_count = 6
+mesh = SubResource("ArrayMesh_3ikbl")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jsm35"]
+albedo_color = Color(0.16078432, 0.2627451, 0.2901961, 1)
+metallic = 0.05
+roughness = 0.9
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_8hmmh"]
+top_radius = 1.7
+bottom_radius = 2.4
+height = 6.0
+radial_segments = 7
+
+[sub_resource type="BoxMesh" id="BoxMesh_jcoch"]
+size = Vector3(1.768, 1.25, 1.768)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mb6wj"]
+albedo_color = Color(0.75686276, 0.64705884, 0.44313726, 1)
+roughness = 0.8
+emission_enabled = true
+emission = Color(0.75686276, 0.64705884, 0.44313726, 1)
+emission_energy_multiplier = 0.35
+
+[sub_resource type="BoxMesh" id="BoxMesh_ls5mr"]
+size = Vector3(0.1, 0.6, 0.04)
+
+[sub_resource type="BoxMesh" id="BoxMesh_24iqj"]
+size = Vector3(0.1, 0.6, 0.04)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ufxwv"]
+albedo_color = Color(0.14901961, 0.23137255, 0.2509804, 1)
+metallic = 0.25
+roughness = 0.8
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_6kk14"]
+_surfaces = [{
+"aabb": AABB(-1, -0.03, -1, 2, 0.75, 2),
+"format": 34359738375,
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAAAOxROD8AAAAAAAAAAI/C9bwAAIC/AACAv+xROD4AAIC/AAAAAOxROD8AAAAAAACAP+xROD4AAIC/AAAAAI/C9bwAAIC/AAAAAOxROD8AAAAAAACAP4/C9bwAAAAAAACAP+xROD4AAIC/AAAAAOxROD8AAAAAAACAP+xROD4AAIA/AACAP4/C9bwAAAAAAAAAAOxROD8AAAAAAAAAAI/C9bwAAIA/AACAP+xROD4AAIA/AAAAAOxROD8AAAAAAACAv+xROD4AAIA/AAAAAI/C9bwAAIA/AAAAAOxROD8AAAAAAACAv4/C9bwAAAAAAACAv+xROD4AAIA/AAAAAOxROD8AAAAAAACAv+xROD4AAIC/AACAv4/C9bwAAAAA/38AAAAA/7//f9s2Ih+sm3CW4Sw2G5Gq/38AAAAA/7+OaeEsFxMX0/9/2zYiH6yb/38AAAAA/78kSds2pUjA1I5p4SwXExfT/38AAAAA/78dU3AW2irRxyRJ2zalSMDU/38AAAAA/7/atgAApUhusB1TcBbaKtHH/38AAAAA/7/hrHAWbDZkstq2AAClSG6w/38AAAAA/7/atts2pUg9q+GscBZsNmSy/38AAAAA/79wluEsNhuRqtq22zalSD2r")
+}]
+
+[sub_resource type="BoxMesh" id="BoxMesh_5onrj"]
+size = Vector3(1.4484, 1.25, 1.4484)
+
+[sub_resource type="BoxMesh" id="BoxMesh_6fgn7"]
+size = Vector3(0.1, 0.6, 0.04)
+
+[sub_resource type="BoxMesh" id="BoxMesh_127dm"]
+size = Vector3(0.1, 0.6, 0.04)
+
+[sub_resource type="BoxMesh" id="BoxMesh_x4q4q"]
+size = Vector3(1.1288, 1.25, 1.1288)
+
+[sub_resource type="BoxMesh" id="BoxMesh_5d47y"]
+size = Vector3(0.1, 0.6, 0.04)
+
+[sub_resource type="BoxMesh" id="BoxMesh_i0s0m"]
+size = Vector3(0.1, 0.6, 0.04)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_fksj5"]
+top_radius = 0.015
+bottom_radius = 0.08
+height = 1.3
+radial_segments = 6
+
+[sub_resource type="SphereMesh" id="SphereMesh_wln6h"]
+radius = 0.13
+height = 0.26
+radial_segments = 12
+rings = 6
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_72btw"]
+albedo_color = Color(0.16078432, 0.2627451, 0.2901961, 1)
+metallic = 0.05
+roughness = 0.9
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_4syoe"]
+top_radius = 1.7
+bottom_radius = 2.4
+height = 6.0
+radial_segments = 7
+
+[sub_resource type="BoxMesh" id="BoxMesh_j10d1"]
+size = Vector3(1.768, 1.25, 1.768)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_st1b8"]
+albedo_color = Color(0.75686276, 0.64705884, 0.44313726, 1)
+roughness = 0.8
+emission_enabled = true
+emission = Color(0.75686276, 0.64705884, 0.44313726, 1)
+emission_energy_multiplier = 0.35
+
+[sub_resource type="BoxMesh" id="BoxMesh_trckk"]
+size = Vector3(0.1, 0.6, 0.04)
+
+[sub_resource type="BoxMesh" id="BoxMesh_lfmtj"]
+size = Vector3(0.1, 0.6, 0.04)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kqrsx"]
+albedo_color = Color(0.14901961, 0.23137255, 0.2509804, 1)
+metallic = 0.25
+roughness = 0.8
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_w485y"]
+_surfaces = [{
+"aabb": AABB(-1, -0.03, -1, 2, 0.75, 2),
+"format": 34359738375,
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAAAOxROD8AAAAAAAAAAI/C9bwAAIC/AACAv+xROD4AAIC/AAAAAOxROD8AAAAAAACAP+xROD4AAIC/AAAAAI/C9bwAAIC/AAAAAOxROD8AAAAAAACAP4/C9bwAAAAAAACAP+xROD4AAIC/AAAAAOxROD8AAAAAAACAP+xROD4AAIA/AACAP4/C9bwAAAAAAAAAAOxROD8AAAAAAAAAAI/C9bwAAIA/AACAP+xROD4AAIA/AAAAAOxROD8AAAAAAACAv+xROD4AAIA/AAAAAI/C9bwAAIA/AAAAAOxROD8AAAAAAACAv4/C9bwAAAAAAACAv+xROD4AAIA/AAAAAOxROD8AAAAAAACAv+xROD4AAIC/AACAv4/C9bwAAAAA/38AAAAA/7//f9s2Ih+sm3CW4Sw2G5Gq/38AAAAA/7+OaeEsFxMX0/9/2zYiH6yb/38AAAAA/78kSds2pUjA1I5p4SwXExfT/38AAAAA/78dU3AW2irRxyRJ2zalSMDU/38AAAAA/7/atgAApUhusB1TcBbaKtHH/38AAAAA/7/hrHAWbDZkstq2AAClSG6w/38AAAAA/7/atts2pUg9q+GscBZsNmSy/38AAAAA/79wluEsNhuRqtq22zalSD2r")
+}]
+
+[sub_resource type="BoxMesh" id="BoxMesh_j2adl"]
+size = Vector3(1.4484, 1.25, 1.4484)
+
+[sub_resource type="BoxMesh" id="BoxMesh_nna41"]
+size = Vector3(0.1, 0.6, 0.04)
+
+[sub_resource type="BoxMesh" id="BoxMesh_pphoo"]
+size = Vector3(0.1, 0.6, 0.04)
+
+[sub_resource type="BoxMesh" id="BoxMesh_tg380"]
+size = Vector3(1.1288, 1.25, 1.1288)
+
+[sub_resource type="BoxMesh" id="BoxMesh_hti1p"]
+size = Vector3(0.1, 0.6, 0.04)
+
+[sub_resource type="BoxMesh" id="BoxMesh_xqeds"]
+size = Vector3(0.1, 0.6, 0.04)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_buywb"]
+top_radius = 0.015
+bottom_radius = 0.08
+height = 1.3
+radial_segments = 6
+
+[sub_resource type="SphereMesh" id="SphereMesh_g2c8m"]
+radius = 0.13
+height = 0.26
+radial_segments = 12
+rings = 6
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_p5bx2"]
+render_priority = 0
+shader = ExtResource("3_sv2qb")
+shader_parameter/offset = 0.0
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_e3og1"]
+size = Vector2(25, 12)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rabpd"]
+render_priority = 0
+shader = ExtResource("3_sv2qb")
+shader_parameter/offset = 1.7
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_bij7s"]
+render_priority = 0
+shader = ExtResource("3_sv2qb")
+shader_parameter/offset = 3.4
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3jiec"]
+render_priority = 0
+shader = ExtResource("3_sv2qb")
+shader_parameter/offset = 5.1
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3fb6s"]
+render_priority = 0
+shader = ExtResource("3_sv2qb")
+shader_parameter/offset = 6.8
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_y2qr4"]
+render_priority = 0
+shader = ExtResource("3_sv2qb")
+shader_parameter/offset = 8.5
+
+[node name="CourtyardBackdrop" type="Node3D" unique_id=1799308176]
+
+[node name="WeatherEffects" type="Node3D" parent="." unique_id=82867864]
+
+[node name="RainRipples" type="MultiMeshInstance3D" parent="WeatherEffects" unique_id=1641448769]
+material_override = SubResource("ShaderMaterial_k8qa1")
+cast_shadow = 0
+multimesh = SubResource("MultiMesh_yl0lc")
+
+[node name="DriftingMapleLeaves" type="MultiMeshInstance3D" parent="WeatherEffects" unique_id=1633180075]
+material_override = SubResource("ShaderMaterial_wovn4")
+cast_shadow = 0
+custom_aabb = AABB(-21, -1, -23, 42, 9, 39)
+multimesh = SubResource("MultiMesh_knjw5")
+
+[node name="DistantLandscape" type="Node3D" parent="." unique_id=659447897]
+
+[node name="DistantRidge0" type="MultiMeshInstance3D" parent="DistantLandscape" unique_id=1719333518]
+material_override = SubResource("StandardMaterial3D_6wesk")
+cast_shadow = 0
+multimesh = SubResource("MultiMesh_88cuk")
+
+[node name="DistantRidge1" type="MultiMeshInstance3D" parent="DistantLandscape" unique_id=1698145700]
+material_override = SubResource("StandardMaterial3D_pj7b1")
+cast_shadow = 0
+multimesh = SubResource("MultiMesh_xj8wg")
+
+[node name="MountainPagoda_West" type="Node3D" parent="DistantLandscape" unique_id=893888627]
+transform = Transform3D(0.85, 0, 0, 0, 0.85, 0, 0, 0, 0.85, -26, 4, -31)
+
+[node name="MeshInstance3D_001" type="MeshInstance3D" parent="DistantLandscape/MountainPagoda_West" unique_id=172045705]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3, 0)
+material_override = SubResource("StandardMaterial3D_jsm35")
+mesh = SubResource("CylinderMesh_8hmmh")
+
+[node name="MeshInstance3D_002" type="MeshInstance3D" parent="DistantLandscape/MountainPagoda_West" unique_id=1857937916]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.63, 0)
+material_override = SubResource("StandardMaterial3D_jsm35")
+mesh = SubResource("BoxMesh_jcoch")
+
+[node name="MeshInstance3D_003" type="MeshInstance3D" parent="DistantLandscape/MountainPagoda_West" unique_id=645464486]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.17, 0.75, 0.91)
+material_override = SubResource("StandardMaterial3D_mb6wj")
+mesh = SubResource("BoxMesh_ls5mr")
+
+[node name="MeshInstance3D_004" type="MeshInstance3D" parent="DistantLandscape/MountainPagoda_West" unique_id=991816853]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.17, 0.75, 0.91)
+material_override = SubResource("StandardMaterial3D_mb6wj")
+mesh = SubResource("BoxMesh_24iqj")
+
+[node name="MeshInstance3D_005" type="MeshInstance3D" parent="DistantLandscape/MountainPagoda_West" unique_id=512360338]
+transform = Transform3D(2.6, 0, 0, 0, 1, 0, 0, 0, 2.6, 0, 1.2, 0)
+material_override = SubResource("StandardMaterial3D_ufxwv")
+mesh = SubResource("ArrayMesh_6kk14")
+
+[node name="MeshInstance3D_006" type="MeshInstance3D" parent="DistantLandscape/MountainPagoda_West" unique_id=1329066384]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.28, 0)
+material_override = SubResource("StandardMaterial3D_jsm35")
+mesh = SubResource("BoxMesh_5onrj")
+
+[node name="MeshInstance3D_007" type="MeshInstance3D" parent="DistantLandscape/MountainPagoda_West" unique_id=438492663]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9585, 2.4, 0.7455)
+material_override = SubResource("StandardMaterial3D_mb6wj")
+mesh = SubResource("BoxMesh_6fgn7")
+
+[node name="MeshInstance3D_008" type="MeshInstance3D" parent="DistantLandscape/MountainPagoda_West" unique_id=1952518142]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9585, 2.4, 0.7455)
+material_override = SubResource("StandardMaterial3D_mb6wj")
+mesh = SubResource("BoxMesh_127dm")
+
+[node name="MeshInstance3D_009" type="MeshInstance3D" parent="DistantLandscape/MountainPagoda_West" unique_id=466040270]
+transform = Transform3D(2.13, 0, 0, 0, 1, 0, 0, 0, 2.13, 0, 2.85, 0)
+material_override = SubResource("StandardMaterial3D_ufxwv")
+mesh = SubResource("ArrayMesh_6kk14")
+
+[node name="MeshInstance3D_010" type="MeshInstance3D" parent="DistantLandscape/MountainPagoda_West" unique_id=1870474120]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.93, 0)
+material_override = SubResource("StandardMaterial3D_jsm35")
+mesh = SubResource("BoxMesh_x4q4q")
+
+[node name="MeshInstance3D_011" type="MeshInstance3D" parent="DistantLandscape/MountainPagoda_West" unique_id=258830374]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.747, 4.05, 0.581)
+material_override = SubResource("StandardMaterial3D_mb6wj")
+mesh = SubResource("BoxMesh_5d47y")
+
+[node name="MeshInstance3D_012" type="MeshInstance3D" parent="DistantLandscape/MountainPagoda_West" unique_id=1160198551]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.747, 4.05, 0.581)
+material_override = SubResource("StandardMaterial3D_mb6wj")
+mesh = SubResource("BoxMesh_i0s0m")
+
+[node name="MeshInstance3D_013" type="MeshInstance3D" parent="DistantLandscape/MountainPagoda_West" unique_id=342538943]
+transform = Transform3D(1.66, 0, 0, 0, 1, 0, 0, 0, 1.66, 0, 4.5, 0)
+material_override = SubResource("StandardMaterial3D_ufxwv")
+mesh = SubResource("ArrayMesh_6kk14")
+
+[node name="MeshInstance3D_014" type="MeshInstance3D" parent="DistantLandscape/MountainPagoda_West" unique_id=1908592132]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.7, 0)
+material_override = SubResource("StandardMaterial3D_jsm35")
+mesh = SubResource("CylinderMesh_fksj5")
+
+[node name="MeshInstance3D_015" type="MeshInstance3D" parent="DistantLandscape/MountainPagoda_West" unique_id=200783146]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.3, 0)
+material_override = SubResource("StandardMaterial3D_mb6wj")
+mesh = SubResource("SphereMesh_wln6h")
+
+[node name="MountainPagoda_East" type="Node3D" parent="DistantLandscape" unique_id=1863688810]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 29, 3.1, -34)
+
+[node name="MeshInstance3D_001" type="MeshInstance3D" parent="DistantLandscape/MountainPagoda_East" unique_id=2037095482]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3, 0)
+material_override = SubResource("StandardMaterial3D_72btw")
+mesh = SubResource("CylinderMesh_4syoe")
+
+[node name="MeshInstance3D_002" type="MeshInstance3D" parent="DistantLandscape/MountainPagoda_East" unique_id=1280542668]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.63, 0)
+material_override = SubResource("StandardMaterial3D_72btw")
+mesh = SubResource("BoxMesh_j10d1")
+
+[node name="MeshInstance3D_003" type="MeshInstance3D" parent="DistantLandscape/MountainPagoda_East" unique_id=1462769366]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.17, 0.75, 0.91)
+material_override = SubResource("StandardMaterial3D_st1b8")
+mesh = SubResource("BoxMesh_trckk")
+
+[node name="MeshInstance3D_004" type="MeshInstance3D" parent="DistantLandscape/MountainPagoda_East" unique_id=55440472]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.17, 0.75, 0.91)
+material_override = SubResource("StandardMaterial3D_st1b8")
+mesh = SubResource("BoxMesh_lfmtj")
+
+[node name="MeshInstance3D_005" type="MeshInstance3D" parent="DistantLandscape/MountainPagoda_East" unique_id=1831221381]
+transform = Transform3D(2.6, 0, 0, 0, 1, 0, 0, 0, 2.6, 0, 1.2, 0)
+material_override = SubResource("StandardMaterial3D_kqrsx")
+mesh = SubResource("ArrayMesh_w485y")
+
+[node name="MeshInstance3D_006" type="MeshInstance3D" parent="DistantLandscape/MountainPagoda_East" unique_id=1105941554]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.28, 0)
+material_override = SubResource("StandardMaterial3D_72btw")
+mesh = SubResource("BoxMesh_j2adl")
+
+[node name="MeshInstance3D_007" type="MeshInstance3D" parent="DistantLandscape/MountainPagoda_East" unique_id=1135456833]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9585, 2.4, 0.7455)
+material_override = SubResource("StandardMaterial3D_st1b8")
+mesh = SubResource("BoxMesh_nna41")
+
+[node name="MeshInstance3D_008" type="MeshInstance3D" parent="DistantLandscape/MountainPagoda_East" unique_id=2015384828]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9585, 2.4, 0.7455)
+material_override = SubResource("StandardMaterial3D_st1b8")
+mesh = SubResource("BoxMesh_pphoo")
+
+[node name="MeshInstance3D_009" type="MeshInstance3D" parent="DistantLandscape/MountainPagoda_East" unique_id=1146691817]
+transform = Transform3D(2.13, 0, 0, 0, 1, 0, 0, 0, 2.13, 0, 2.85, 0)
+material_override = SubResource("StandardMaterial3D_kqrsx")
+mesh = SubResource("ArrayMesh_w485y")
+
+[node name="MeshInstance3D_010" type="MeshInstance3D" parent="DistantLandscape/MountainPagoda_East" unique_id=25875846]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.93, 0)
+material_override = SubResource("StandardMaterial3D_72btw")
+mesh = SubResource("BoxMesh_tg380")
+
+[node name="MeshInstance3D_011" type="MeshInstance3D" parent="DistantLandscape/MountainPagoda_East" unique_id=358704854]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.747, 4.05, 0.581)
+material_override = SubResource("StandardMaterial3D_st1b8")
+mesh = SubResource("BoxMesh_hti1p")
+
+[node name="MeshInstance3D_012" type="MeshInstance3D" parent="DistantLandscape/MountainPagoda_East" unique_id=1503511111]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.747, 4.05, 0.581)
+material_override = SubResource("StandardMaterial3D_st1b8")
+mesh = SubResource("BoxMesh_xqeds")
+
+[node name="MeshInstance3D_013" type="MeshInstance3D" parent="DistantLandscape/MountainPagoda_East" unique_id=1348843024]
+transform = Transform3D(1.66, 0, 0, 0, 1, 0, 0, 0, 1.66, 0, 4.5, 0)
+material_override = SubResource("StandardMaterial3D_kqrsx")
+mesh = SubResource("ArrayMesh_w485y")
+
+[node name="MeshInstance3D_014" type="MeshInstance3D" parent="DistantLandscape/MountainPagoda_East" unique_id=1623568012]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.7, 0)
+material_override = SubResource("StandardMaterial3D_72btw")
+mesh = SubResource("CylinderMesh_buywb")
+
+[node name="MeshInstance3D_015" type="MeshInstance3D" parent="DistantLandscape/MountainPagoda_East" unique_id=1008347284]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.3, 0)
+material_override = SubResource("StandardMaterial3D_st1b8")
+mesh = SubResource("SphereMesh_g2c8m")
+
+[node name="LakeMist" type="Node3D" parent="." unique_id=1898068553]
+
+[node name="LakeMist0" type="MeshInstance3D" parent="LakeMist" unique_id=132852515]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, -0.5, -6)
+material_override = SubResource("ShaderMaterial_p5bx2")
+cast_shadow = 0
+mesh = SubResource("PlaneMesh_e3og1")
+
+[node name="LakeMist1" type="MeshInstance3D" parent="LakeMist" unique_id=620504135]
+transform = Transform3D(0.8253356, 0, 0.5646425, 0, 1, 0, -0.5646425, 0, 0.8253356, 25, -0.6, 2)
+material_override = SubResource("ShaderMaterial_rabpd")
+cast_shadow = 0
+mesh = SubResource("PlaneMesh_e3og1")
+
+[node name="LakeMist2" type="MeshInstance3D" parent="LakeMist" unique_id=1085127336]
+transform = Transform3D(0.3623577, 0, 0.9320391, 0, 1, 0, -0.9320391, 0, 0.3623577, -20, -0.4, -30)
+material_override = SubResource("ShaderMaterial_bij7s")
+cast_shadow = 0
+mesh = SubResource("PlaneMesh_e3og1")
+
+[node name="LakeMist3" type="MeshInstance3D" parent="LakeMist" unique_id=1525289738]
+transform = Transform3D(-0.22720204, 0, 0.9738476, 0, 1, 0, -0.9738476, 0, -0.22720204, 19, -0.4, -31)
+material_override = SubResource("ShaderMaterial_3jiec")
+cast_shadow = 0
+mesh = SubResource("PlaneMesh_e3og1")
+
+[node name="LakeMist4" type="MeshInstance3D" parent="LakeMist" unique_id=504098527]
+transform = Transform3D(-0.7373938, 0, 0.67546314, 0, 1, 0, -0.67546314, 0, -0.7373938, 0, -0.5, -38)
+material_override = SubResource("ShaderMaterial_3fb6s")
+cast_shadow = 0
+mesh = SubResource("PlaneMesh_e3og1")
+
+[node name="LakeMist5" type="MeshInstance3D" parent="LakeMist" unique_id=619920854]
+transform = Transform3D(-0.9899925, 0, 0.14112, 0, 1, 0, -0.14112, 0, -0.9899925, 0, -0.5, 24)
+material_override = SubResource("ShaderMaterial_y2qr4")
+cast_shadow = 0
+mesh = SubResource("PlaneMesh_e3og1")
